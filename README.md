@@ -1,1 +1,1 @@
-# Laborat-rios-de-Bioinform-tica
+# Laboratórios de Bioinformática
