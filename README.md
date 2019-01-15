@@ -1,6 +1,8 @@
 # Mestrado em Bioinformática
 <br />
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/EEUMLOGO.png" width="150" height="136" />
+
 ## Laboratórios de Bioinformática
 ### *Staphylococcus aureus N315*
 <br />
