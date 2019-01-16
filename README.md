@@ -2,7 +2,7 @@
 <br />
 
 
-## *Staphylococcus aureus N315*
+## *Staphylococcus aureus* N315
 <br />
 
 ### Mestrado em Bioinformática
