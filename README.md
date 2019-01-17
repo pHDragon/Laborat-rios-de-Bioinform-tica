@@ -25,3 +25,8 @@ Devido a esta resistência, foram desenvolvidos antibióticos não β-lactâmico
 O aparecimento de estirpes resistentes a antibióticos, como é o caso das MRSA e VRSA, e a habilidade de ultrapassar a eficácia dos medicamentos disponíveis no mercado e desenvolver resistências, enfatiza a necessidade urgente de se desenvolverem novas drogas para prevenir e controlar infeções relacionadas com *S. aureus*.
 <br />
 
+```python
+def something():
+    if not x:
+        return True
+```
