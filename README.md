@@ -382,7 +382,7 @@ Procedemos à identificação de possíveis modificações pós-tradução, que 
 
 <img src="%23SA1259  Dihydrofolate reductase/DHFR_locais_fosf.png">
 
-##### Figura 6
+##### Figura 6 – Posições de fosforilação na DHFR previstas pelo NetPhosBac
 <br />
 
 Os domínios conservados na sequência também foram determinados, com recurso ao ScanProsite e CDD do NCBI. Os motivos geralmente estão relacionados com determinadas funções biológicas. Assim, a determinação de motivos conservados será útil no design de fármacos, por se ter o conhecimento, por exemplo de locais de ligação de metais, substratos ou outras funções associadas aos motivos. Em ambas as ferramentas é detetado o motivo pertencente à superfamília DHFR (dihidrofolato redutase), característico deste tipo de enzimas. Verificamos que há um “match”, significativo, com quase toda a totalidade da enzima. No caso do CDD ainda é possível verificar as posições de interação dos dois substratos com aminoácidos individuais, que correspondem às mesmas posições presentes nas features obtidas com biopython. Estes locais são potenciais alvos de drogas contra a DHFR.
