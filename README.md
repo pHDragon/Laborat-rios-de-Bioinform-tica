@@ -468,7 +468,7 @@ Novamente procedemos ao estudo da localização, organização estrutural e modi
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Dom_TransMemb_alpha.PNG" width="650"> <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Dom_TransMemb_bet.PNG" width="400">
 
-##### Figura 16
+##### Figura 16 – Previsão de domínios α-hélice transmembranares da GLMU prevista pelo Phobius (A) e de domínios β-barril pelo Boctupus (B)
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU SecStruct.PNG" width="800">
