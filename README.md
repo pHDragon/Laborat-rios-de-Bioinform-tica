@@ -344,11 +344,15 @@ Dihidrofolato redutase (DHFR), com id de acessão P99079 na base de dados Protei
 <br />
 <br />
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/DHFR_Reaction_Scheme.png/308px-DHFR_Reaction_Scheme.png">
-#### Figura 1
+
+##### Figura 1
 <br />
+
 <img src="%23SA1259  Dihydrofolate reductase/DHFR 3D.PNG" width="400">
-#### Figura 2
+
+##### Figura 2
 <br />
+
 Com recurso a biopython, importamos o ficheiro genbank da enzima dihidrofolato redutase. Ainda com o biopython, é possível extrair informações deste ficheiro, nomeadamente das features, que contém informações relevantes sobre regiões da proteína. Neste caso, verificamos que a enzima tem um comprimento de 159 aminoácidos e nas features é possível identificar os locais de ligação dos substratos (NADPH e dihidrofolato) na enzima. Os valores apresentados correspondem aos aminoácidos que participam na ligação dos substratos à enzima. O conhecimento dos locais de ligação e do modo como se ligam os substratos é sempre útil no design de drogas, por permitir encontrar substâncias que apresentem padrões de ligação semelhantes, sendo ainda possível os locais da enzima que servirão como potencias alvos, por serem importantes na ligação ao substrato. Todas as anotações do ficheiro do UniProt estão em anexo.
 <br />
 De seguida procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com recurso ao LocTree3, previmos a localização sub-celular da DHFR. O resultado encontra-se na figura 3. A enzima será citoplasmática e tendo em conta a função que desempenha, a localização faz algum sentido. Usámos o Phobius e Boctupus para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 4 e verificam a inexistência de domínios transmembranares em ambos os casos, que corrobora o resultado obtido pelo LocTree3, de que a enzima será citoplasmática. Recorrendo ao PDB, usado atrás para a estrutura 3D da enzima, podemos avaliar a existência de α-hélices e folhas β. Na figura 5 encontra-se uma lista de ‘features’ da proteína. Na linha ‘Secstruc’ verificamos a existência de 4 hélices e 10 folhas β, corroborado, também, pela observação da estrutura tridimensional.
