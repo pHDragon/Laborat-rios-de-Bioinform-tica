@@ -374,7 +374,7 @@ De seguida procedemos ao estudo da localização, organização estrutural e mod
 
 <img src="%23SA1259  Dihydrofolate reductase/DHFR SecStruct.PNG" width="800">
 
-##### Figura 5
+##### Figura 5 – Lista de features da DHFR, obtida do PDB, com código de acesso 6E4E. As estruturas α-hélices e folhas β encontram-se representadas a vermelho e bege, respetivamente, na linha Secsstruc
 <br />
 
 Procedemos à identificação de possíveis modificações pós-tradução, que alteram as características da proteína, alteram polaridade e tamanho dos aminoácidos, afetando a ligação da proteína ao substrato, a localização subcelular pode ser determinada por estas modificações. Estudamos a fosforilação, nos resíduos de serina, treonina e tyrosina, na DHFR através do NetPhosBac. Os resultados obtidos encontram-se na figura 6, em que T é a treonina, S a serina e Y a tirosina. Tendo representadas as possíveis posições de fosforilação, podemos comparar com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da enzima. Verificamos que existe fosforilação nas posições 36, 40, 79, 136 e 137. Por comparação com as features, verificamos que as fosforilações não afetarão os locais de ligação de substrato, pelo que estas modificações não terão impacto no modo de ligação dos substratos. 
