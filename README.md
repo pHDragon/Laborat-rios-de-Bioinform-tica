@@ -344,10 +344,10 @@ Dihidrofolato redutase (DHFR), com id de acessão P99079 na base de dados Protei
 <br />
 <br />
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/DHFR_Reaction_Scheme.png/308px-DHFR_Reaction_Scheme.png">
-<br />
+#### Figura 1
 <br />
 <img src="%23SA1259  Dihydrofolate reductase/DHFR 3D.PNG" width="400">
-<br />
+#### Figura 2
 <br />
 Com recurso a biopython, importamos o ficheiro genbank da enzima dihidrofolato redutase. Ainda com o biopython, é possível extrair informações deste ficheiro, nomeadamente das features, que contém informações relevantes sobre regiões da proteína. Neste caso, verificamos que a enzima tem um comprimento de 159 aminoácidos e nas features é possível identificar os locais de ligação dos substratos (NADPH e dihidrofolato) na enzima. Os valores apresentados correspondem aos aminoácidos que participam na ligação dos substratos à enzima. O conhecimento dos locais de ligação e do modo como se ligam os substratos é sempre útil no design de drogas, por permitir encontrar substâncias que apresentem padrões de ligação semelhantes, sendo ainda possível os locais da enzima que servirão como potencias alvos, por serem importantes na ligação ao substrato. Todas as anotações do ficheiro do UniProt estão em anexo.
 <br />
