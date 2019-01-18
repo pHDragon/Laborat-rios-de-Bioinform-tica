@@ -397,7 +397,7 @@ A glutamato racemase (GLUR), com id de acessão P63638, na base de dados Protein
 <br />
 <img src="%23 SA0997 Glutamate racemase/GLUR reaction.PNG">
 
-##### Figura 7
+##### Figura 7 – Reação catalisada pela enzima glutamato racemase, EC 5.1.1.3
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/GLUR 3D.PNG" width="400">
