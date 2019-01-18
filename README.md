@@ -402,7 +402,7 @@ A glutamato racemase (GLUR), com id de acessão P63638, na base de dados Protein
 
 <img src="%23 SA0997 Glutamate racemase/GLUR 3D.PNG" width="400">
 
-##### Figura 8
+##### Figura 8 – Imagem tridimensional da glutamato racemase, obtida do Swiss Model através do código de acessão P63638.
 <br />
 
 De novo, recorrendo ao biopython, importamos o ficheiro genbank da enzima glutamato racemase. Tal como atrás, é possível extrair as features e outras informações relevantes. Neste caso, verificamos que a enzima tem um comprimento de 266 aminoácidos e nas features é possível identificar os locais de ligação do substrato (glutamato) na enzima. Os valores aqui encontrados correspondem aos aminoácidos que participam na ligação do substrato à enzima, conhecimento útil no design de drogas. Todas as anotações do ficheiro do UniProt estão em anexo.
