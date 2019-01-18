@@ -353,7 +353,7 @@ Dihidrofolato redutase (DHFR), com id de acessão P99079 na base de dados Protei
 
 <img src="%23SA1259  Dihydrofolate reductase/DHFR 3D.PNG" width="400">
 
-##### Figura 2
+##### Figura 2 – Imagem tridimensional da dihidrofolato redutase, obtida do PDB através do código de acessão 6E4E. Apesar desta enzima ser proveniente de uma estirpe de S. aureus diferente da N315, a sua sequência aminoacídica é a mesma
 
 <br />
 
