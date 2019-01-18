@@ -481,7 +481,7 @@ Com recurso ao NetPhosBac estudámos os locais de fosforilação nos resíduos d
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU_locais_fosf.PNG">
 
-##### Figura 18
+##### Figura 18 – Posições de fosforilação na GLMU previstas pelo NetPhosBac
 <br />
 
 Utilizámos o ScanProsite e CDD do NCBI, para determinar os motivos conservados na GLMU. No caso do ScanProsite, foram detetadas duas regiões conservadas, ‘LuxR-type’ HTH e ‘Hexapeptide-repeat containing-transferases’. No primeiro caso foi identificado um domínio de ligação ao DNA. No entanto, tendo em conta as funções já descritas desta enzima e o nível de confiança obtido, este motivo não estará associado à enzima. A segunda região conservada está associada à atividade de transferase. Tendo em conta a descrição atrás da atividade de acetiltransferase da GLMU, este motivo estará associado a essa atividade, visto a sua posição ser também no C-terminal. No CDD foi encontrada uma superfamília GlmU. Verificámos que há uma homologia forte com as enzimas pertencentes a esta família, todas elas com as mesmas atividades.
