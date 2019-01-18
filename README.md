@@ -422,7 +422,7 @@ Procedemos ao estudo da localização, organização estrutural e modificações
 
 <img src="%23 SA0997 Glutamate racemase/GLUR SecStruct.PNG" width="800">
 
-##### Figura 11
+##### Figura 11 – Lista de features da GLUR, obtida do PDB, com código de acesso 2JFQ, de uma strain de S. auresus diferente, mas a sequência é igual. As estruturas α-hélices e folhas β encontram-se representadas a vermelho e bege, respetivamente, na linha Secsstruc
 <br />
 
 De seguida identificamos locais de possíveis modificações pós-tradução. Estudamos a fosforilação, nos resíduos de serina, treonina e tyrosina, na GLUR através do NetPhosBac, tal como anteriormente. Os resultados obtidos encontram-se na figura 12, em que T é a treonina, S a serina e Y a tirosina. Tendo representadas as possíveis posições de fosforilação, podemos comparar com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da enzima. Verificamos que existe fosforilação nas posições 88, 122, 168, 175, 185, 206, 207, 243 e 256. Por comparação com as features da GLUR, verificamos que a posição 185 está envolvida na ligação ao glutamato, pelo que esta modificação terá impacto no modo de ligação do substrato.
