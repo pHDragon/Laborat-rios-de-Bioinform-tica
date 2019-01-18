@@ -54,7 +54,7 @@ Entrez.email = "...@aaa.org"
 handle = Entrez.efetch(db="pubmed", id="28588310,29111265,23519164", retmode="xml")
 search_n315=Entrez.read(handle)
  #%%
-#genes essenciais presentes na simulação de genes essenciais do modleo do repositórii do Optflux
+#genes essenciais presentes na simulação de genes essenciais do modelo do repositório do Optflux
 # com função objetivo R_biomass_SA_8a 
 genes_essenciais=['SA0923','SA0924','SA0925','SA0926','SA0920','SA0921','SA0922','SA0938','SA0937','SA0916',
                   'SA0917','SA0918','SA0919','SA0912','SA0913','SA0915','SA0910','SA0911','SA1938','SA0842',
@@ -334,3 +334,146 @@ for i in glmU.features:
     print(i)
     print(i.qualifiers)
 ```
+<br />
+
+# Proteínas
+<br />
+
+## Dihidrofolato redutase
+Dihidrofolato redutase (DHFR), com id de acessão P99079 na base de dados Protein do NCBI e no UniProt (com score de anotação 3/5 no UniProt), é proveniente do gene folA, com id de acessão SA1259. Esta enzima é importante no metabolismo do folato, que cataliza a reação representada na figura 1. Esta é uma reação essencial para a síntese de novo de glicina e purina, e para a síntese de precursores de DNA, como a timina. A estrutura tridimensional da enzima encontra-se representada na figura 2, em que se encontra ligado o NADP+.
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+Com recurso a biopython, importamos o ficheiro genbank da enzima dihidrofolato redutase. Ainda com o biopython, é possível extrair informações deste ficheiro, nomeadamente das features, que contém informações relevantes sobre regiões da proteína. Neste caso, verificamos que a enzima tem um comprimento de 159 aminoácidos e nas features é possível identificar os locais de ligação dos substratos (NADPH e dihidrofolato) na enzima. Os valores apresentados correspondem aos aminoácidos que participam na ligação dos substratos à enzima. O conhecimento dos locais de ligação e do modo como se ligam os substratos é sempre útil no design de drogas, por permitir encontrar substâncias que apresentem padrões de ligação semelhantes, sendo ainda possível os locais da enzima que servirão como potencias alvos, por serem importantes na ligação ao substrato. Todas as anotações do ficheiro do UniProt estão em anexo.
+<br />
+De seguida procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com recurso ao LocTree3, previmos a localização sub-celular da DHFR. O resultado encontra-se na figura 3. A enzima será citoplasmática e tendo em conta a função que desempenha, a localização faz algum sentido. Usámos o Phobius e Boctupus para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 4 e verificam a inexistência de domínios transmembranares em ambos os casos, que corrobora o resultado obtido pelo LocTree3, de que a enzima será citoplasmática. Recorrendo ao PDB, usado atrás para a estrutura 3D da enzima, podemos avaliar a existência de α-hélices e folhas β. Na figura 5 encontra-se uma lista de ‘features’ da proteína. Na linha ‘Secstruc’ verificamos a existência de 4 hélices e 10 folhas β, corroborado, também, pela observação da estrutura tridimensional.
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+Procedemos à identificação de possíveis modificações pós-tradução, que alteram as características da proteína, alteram polaridade e tamanho dos aminoácidos, afetando a ligação da proteína ao substrato, a localização subcelular pode ser determinada por estas modificações. Estudamos a fosforilação, nos resíduos de serina, treonina e tyrosina, na DHFR através do NetPhosBac. Os resultados obtidos encontram-se na figura 6, em que T é a treonina, S a serina e Y a tirosina. Tendo representadas as possíveis posições de fosforilação, podemos comparar com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da enzima. Verificamos que existe fosforilação nas posições 36, 40, 79, 136 e 137. Por comparação com as features, verificamos que as fosforilações não afetarão os locais de ligação de substrato, pelo que estas modificações não terão impacto no modo de ligação dos substratos. 
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+Os domínios conservados na sequência também foram determinados, com recurso ao ScanProsite e CDD do NCBI. Os motivos geralmente estão relacionados com determinadas funções biológicas. Assim, a determinação de motivos conservados será útil no design de fármacos, por se ter o conhecimento, por exemplo de locais de ligação de metais, substratos ou outras funções associadas aos motivos. Em ambas as ferramentas é detetado o motivo pertencente à superfamília DHFR (dihidrofolato redutase), característico deste tipo de enzimas. Verificamos que há um “match”, significativo, com quase toda a totalidade da enzima. No caso do CDD ainda é possível verificar as posições de interação dos dois substratos com aminoácidos individuais, que correspondem às mesmas posições presentes nas features obtidas com biopython. Estes locais são potenciais alvos de drogas contra a DHFR.
+<br />
+Trimethoprim é uma droga que actua como um análogo de pirimidina e que perturba a síntese de folato, essencial para a via de síntese de timidina. A inibição da DHPR faz com que o organismo não sintetise os nucleótidos necessários para a replicação de DNA, actuando como uma bactericida. Trimethoprim liga-se à proteína e inibe a redução de ácido dihidrofólico (DHF) para ácido tetrahidrofólico (THF). Sendo que THF é um precursor essencial na via de síntese de timidina, há deste modo uma inibição da síntese de DNA. Adicionalmente, Trimethoprim apresenta uma muito maior afinidade para a DHPR da bactéria do que para a humana, o que faz desta proteína um bom alvo terapêutico. Trimethoprim actua melhor em conjunto com Sulfamethoxazole, uma droga que inibe outra enzima envolvida na mesma via, a dihidropteroato sintetase. Esta combinação das duas drogas funciona melhor do que o Trimethoprim por si só, pois reduz o desenvolvimento de resistência por parte de S. aureus a estas drogas[9].
+<br />
+<br />
+## Glutamato racemase
+<br />
+A glutamato racemase (GLUR), com id de acessão P63638, na base de dados Protein do NCBI e no UniProt (com score de anotação 2/5 no UniProt), é resultado da transcrição e tradução do gene murI, com id de acessão SA0997. A enzima está envolvida no metabolismo do glutamato, essencial para a biossíntese da parede celular em bactérias, formando D-glutamato a partir de L-glutamato, reação representada na figura 7. D-glutamato é um monómero da camada de peptidoglicano, um componente essencial na estrutura da parede celular em bactérias. A conservação do glutamato racemase e a sua essencialidade no crescimento em procariotas faz desta enzima um bom alvo para a descoberta de potenciais drogas. A estrutura tridimensional da GLUR encontra-se representada na figura 8, em que se encontram ligadas duas moléculas de D-glutamato. Por esta estrutura, é possível perceber que a enzima é um homodímero.
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+De novo, recorrendo ao biopython, importamos o ficheiro genbank da enzima glutamato racemase. Tal como atrás, é possível extrair as features e outras informações relevantes. Neste caso, verificamos que a enzima tem um comprimento de 266 aminoácidos e nas features é possível identificar os locais de ligação do substrato (glutamato) na enzima. Os valores aqui encontrados correspondem aos aminoácidos que participam na ligação do substrato à enzima, conhecimento útil no design de drogas. Todas as anotações do ficheiro do UniProt estão em anexo.
+<br />
+Procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com recurso ao LocTree3, previmos a localização sub-celular da GLUR, com o resultado representado na figura 9, sendo a enzima citoplasmática. Usámos o Phobius e Boctupus novamente para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 10 e verificam a inexistência de domínios transmembranares em ambos os casos, que corrobora o resultado obtido pelo LocTree3, de que a enzima será citoplasmática. Recorrendo ao PDB, usado atrás para a estrutura 3D da enzima, podemos avaliar a existência de α-hélices e folhas β. Na figura 11 encontra-se uma lista de ‘features’ da proteína. Na linha ‘Secstruc’ verificamos a existência de 11 hélices e 10 folhas β, corroborado, apesar de ser difícil de observar, pela estrutura tridimensional.
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+De seguida identificamos locais de possíveis modificações pós-tradução. Estudamos a fosforilação, nos resíduos de serina, treonina e tyrosina, na GLUR através do NetPhosBac, tal como anteriormente. Os resultados obtidos encontram-se na figura 12, em que T é a treonina, S a serina e Y a tirosina. Tendo representadas as possíveis posições de fosforilação, podemos comparar com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da enzima. Verificamos que existe fosforilação nas posições 88, 122, 168, 175, 185, 206, 207, 243 e 256. Por comparação com as features da GLUR, verificamos que a posição 185 está envolvida na ligação ao glutamato, pelo que esta modificação terá impacto no modo de ligação do substrato.
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+Mais uma vez foram determinados os domínios conservados, com recurso ao ScanProsite e CDD do NCBI. Em ambas as ferramentas é detetado o motivo pertencente à superfamília Asp_Glu_race (Asp/Glu/Hydantoin racemase). Pertencem a esta família racemases relacionadas evolucionariamente, que não necessitam de cofatores para a sua atividade enzimática. Verificamos que há um “match” de duas regiões pequenas, típicas nesta superfamília.
+<br />
+Embora a glutamate racemase em S. aureus não esteja ainda descrita com alvo de drogas terapêuticas conhecidas, foram recentemente identificados vários compostos, Pyrazolopyrimidinediones, que mostraram inibir a glutamato racemase em Helicobacter pylori[10]. Adicionalmente, estes compostos estão ainda em fase experimental, pelo que não têm ainda uso clínico. No entanto, abrem portas para a descoberta de inibidores de glutamato racemase noutras espécies de bactérias, incluindo em S. aureus.
+<br />
+<br />
+(NÃO FALTA AQUI POSSÍVEIS LOCAIS DE LIGAÇÃO DO FARMACO OU COMO CONSEGUIRIA INIBIR? SUPOSTAMENTE ERA ESSE O OBJETIVO NA PROTEÍNA SEM TRATAMENTO CONHECIDO?) 
+<br />
+<br />
+## N-acetilglucosamina-1-fosfato uridiltransferase
+<br />
+N-acetilglucosamina-1-fosfato uridiltransferase (GLMU), com id de acessão Q7A7B4, na base de dados Protein do NCBI e no UniProt (com score de anotação 5/5 no UniProt), é resultado da transcrição e tradução do gene glmU, com id de acessão SA_RS02635, em Nucleotide. Esta enzima é essencial no metabolismo de aminoaçúcares e pode ser também um alvo terapêutico atrativo. GlmU catalisa a formação de uridine-diphospho-N-acetylglucosamine (UDP-GlcNAc), um precursor importante na biossíntese de peptidoglicano e lipopolissacarídeos tanto em bactérias gram-negativas, como gram-positivas. GLMU tem um papel bifuncional a possuir dois centros ativos funcionalmente autónomos: o centro acetiltransferase e o centro uridiltransferase que residem em dois domínios proteicos distintos. A reação de acetiltransferase ocorre no domínio C-terminal (acetiltransferase) e a reação uridiltransferase ocorre no domínio N-terminal (uridiltransferase), figura 12. Para a estrutura tridimensional da GLMU não foi encontrado nenhum modelo. Por isso, realizamos ‘sequence search’ no PDB e escolhemos a sequência mais similar. Optámos pela enzima com id 4AAW (E-value=2.052E-121; Identities=49%; Positives=67%), do organismo S. pneumoniae, com exatamente a mesma função que a GLMU. Esta enzima está representada na figura 13, em que é evidente a presença de um homotrímero. Na parte superior da figura, N-terminal, encontram-se os locais ativos da reação de uridiltransferase; na parte inferior, C-terminal, encontram-se os locais ativos da atividade acetiltransferase.
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+Novamente com o biopython, importamos o ficheiro genbank da enzima glutamato racemase. Extraímos as features e outras informações relevantes. Todas as anotações do ficheiro do UniProt estão em anexo. Verificámos que a enzima tem um comprimento de 450 aminoácidos e nas features é possível identificar os locais de ligação dos substratos (UDP-GlcNAc, acetil-coA, Mg2+) aos locais da enzima. Estes valores correspondem aos aminoácidos que participam na ligação dos substratos à enzima, útil para o design de drogas.
+<br />
+Novamente procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com o LocTree3, previmos a localização sub-celular da GLMU. O resultado obtido encontra-se na figura 14, sendo a enzima citoplasmática, resultado também confirmado pelas anotações da página UniProt desta enzima. Tal como atrás, usámos o Phobius e Boctupus para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 15 e verificam que não existem domínios transmembranares em ambos os casos, que confirma o resultado obtido no LocTree3. Recorrendo ao PDB, podemos avaliar a existência de α-hélices e folhas β, recorrendo à enzima usada atrás para avaliar a estrutura 3D. Na figura 16 encontra-se uma lista de ‘features’ desta enzima. Na linha ‘Secstruc’ verificamos a existência de 15 hélices α e cerca de 41 folhas β.
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+Com recurso ao NetPhosBac estudámos os locais de fosforilação nos resíduos de serina, treonina e tirosina, na GLMU. Os resultados obtidos encontram-se na figura 17, em que T é a treonina, S a serina e Y a tirosina. Comparámos as possíveis posições de fosforilação, com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da GLMU. Verificámos que poderá existir fosforilação nas posições 18, 96, 146, 169, 284, 312, 318, 364, 400 e 434. Por comparação com as features da GLMU, verificamos nenhuma destas posições corresponde a locais de ligação a substrato ou cofatores, pelo que as fosforilações não terão impacto na interação entre enzima e substrato.
+<br />
+<br />
+####################FALTA IMAGEM#################################
+<br />
+<br />
+Utilizámos o ScanProsite e CDD do NCBI, para determinar os motivos conservados na GLMU. No caso do ScanProsite, foram detetadas duas regiões conservadas, ‘LuxR-type’ HTH e ‘Hexapeptide-repeat containing-transferases’. No primeiro caso foi identificado um domínio de ligação ao DNA. No entanto, tendo em conta as funções já descritas desta enzima e o nível de confiança obtido, este motivo não estará associado à enzima. A segunda região conservada está associada à atividade de transferase. Tendo em conta a descrição atrás da atividade de acetiltransferase da GLMU, este motivo estará associado a essa atividade, visto a sua posição ser também no C-terminal. No CDD foi encontrada uma superfamília GlmU. Verificámos que há uma homologia forte com as enzimas pertencentes a esta família, todas elas com as mesmas atividades.
+<br />
+Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em Haemophilus influenzae, que ocupa um centro alostérico adjacente ao local de ligação do substrato GlcNAc-1-P, não se tendo verificado, no entanto atividade contra a GlmU de S. aureus[11]. Verificou-se, contudo, que a ligação deste inibidor previne a ocorrência de rearranjos estruturais necessários para que haja a reação enzimática, o que abre as portas para o desenvolvimento de uma nova classe de inibidores de GlmU e que faz desta enzima um bom alvo para potenciais drogas em S. aureus.
+<br />
+<br />
+#################### (FILOGENIA)#################################
+#################################(REGULAÇÃO)#################################
+<br />
+<br />
+
+# Referências
+<br />
+1.	 Masalha M, Borovok I, Schreiber R, Aharonowitz Y, Cohen G (2001) Analysis of transcription of the Staphylococcus aureus aerobic class Ib and anaerobic class III ribonucleotide reductase genes in response to oxygen. Journal of Bacteriology. 183 (24): 7260–72. doi:10.1128/JB.183.24.7260-7272.2001. PMC 95576. PMID 11717286.
+<br />
+2.	 Chambers HF (2001) The changing epidemiology of Staphylococcus aureus? Emerging Infectious Diseases. 7 (2): 178–82. doi:10.3201/eid0702.010204. PMC 2631711. PMID 11294701.
+<br />
+3.	 Jevons MP (1961) Celbenin-resistant staphylococci. BMJ. 1 (5219): 124–5. doi:10.1136/bmj.1.5219.124-a.
+<br />
+4.	 Deurenberg, R. H., & Stobberingh, E. E. (2008) The evolution of Staphylococcus aureus. Infection, genetics and evolution, 8(6), 747-763.
+<br />
+5.	 Khan, M. F. (2017) Brief History of Staphylococcus aureus: A Focus to Antibiotic Resistance. EC Microbiology, 5, 36-39.
+<br />
+6.	 Blot SI, Vandewoude KH, Hoste EA, Colardyn FA (2002) Outcome and attributable mortality in critically III patients with bacteremia involving methicillin-susceptible and methicillin-resistant Staphylococcus aureus. Archives of Internal Medicine. 162 (19): 2229–35. doi:10.1001/archinte.162.19.2229. PMID 12390067.
+<br />
+7.	 Hiramatsu K, Hanaki H, Ino T, Yabuta K, Oguri T, Tenover FC (1997) Methicillin-resistant Staphylococcus aureus clinical strain with reduced vancomycin susceptibility. The Journal of Antimicrobial Chemotherapy. 40 (1): 135–6. doi:10.1093/jac/40.1.135. PMID 9249217.
+<br />
+8.	 Carter AP, Clemons WM, Brodersen DE, Morgan-Warren RJ, Wimberly BT, Ramakrishnan V (2000) Functional insights from the structure of the 30S ribosomal subunit and its interactions with antibiotics. Nature. 407 (6802): 340–8. doi:10.1038/35030019. PMID 11014183.
+<br />
+9.	 Drugbank: Trimethoprim. https://www.drugbank.ca/drugs/DB00440
+<br />
+10.	 de Jonge BLM, Kutschke A, Uria-Nickelsen M, Kamp HD, Mills SD (2009) Pyrazolopyrimidinediones are selective agents for Helicobacter pylori that suppress growth through inhibition of glutamate racemase (MurI). American Society for Microbiology. 53 (8): 3331–6. doi:10.1128/AAC.00226-09.
+<br />
+11.	 Mochalkin I, Lightle S, Narasimhan L, Bornemeier D, Melnick M, Vanderroest S, McDowell L (2008) Structure of a small-molecule inhibitor complexed with GlmU from Haemophilus influenzae reveals an allosteric binding site. Protein Science. 17 (3): 577–82. doi: 10.1110/ps.073271408.
