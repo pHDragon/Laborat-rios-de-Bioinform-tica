@@ -369,7 +369,7 @@ De seguida procedemos ao estudo da localização, organização estrutural e mod
 
 <img src="%23SA1259  Dihydrofolate reductase/Dom_TransMemb_alpha.PNG" width="650"> <img src="%23SA1259  Dihydrofolate reductase/Dom_TransMemb_bet.PNG" width="600">
 
-##### Figura 4 
+##### Figura 4 – Previsão de domínios α-hélice transmembranares da DHFR prevista pelo Phobius (A) e de domínios β-barril pelo Boctupus (B)
 <br />
 
 <img src="%23SA1259  Dihydrofolate reductase/DHFR SecStruct.PNG" width="800">
