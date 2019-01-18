@@ -343,7 +343,7 @@ for i in glmU.features:
 Dihidrofolato redutase (DHFR), com id de acessão P99079 na base de dados Protein do NCBI e no UniProt (com score de anotação 3/5 no UniProt), é proveniente do gene folA, com id de acessão SA1259. Esta enzima é importante no metabolismo do folato, que cataliza a reação representada na figura 1. Esta é uma reação essencial para a síntese de novo de glicina e purina, e para a síntese de precursores de DNA, como a timina. A estrutura tridimensional da enzima encontra-se representada na figura 2, em que se encontra ligado o NADP+.
 <br />
 <br />
-![Figura 1](/#SA1259%20Dihydrofolate%20reductase/DHFR%20reaction.PNG?raw=true)
+![Figura 1](pHDragon/Laboratarios-de-Bioinformatica/#SA1259%20Dihydrofolate%20reductase/DHFR%20reaction.PNG?raw=True)
 <br />
 <br />
 ####################FALTA IMAGEM#################################
