@@ -417,7 +417,7 @@ Procedemos ao estudo da localização, organização estrutural e modificações
 
 <img src="%23 SA0997 Glutamate racemase/Dom_TransMemb_alpha.PNG" width="650"> <img src="%23 SA0997 Glutamate racemase/Dom_TransMemb_bet.PNG" width="400">
 
-##### Figura 10
+##### Figura 10 – Previsão de domínios α-hélice transmembranares da GLUR prevista pelo Phobius (A) e de domínios β-barril pelo Boctupus (B)
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/GLUR SecStruct.PNG" width="800">
