@@ -473,7 +473,7 @@ Novamente procedemos ao estudo da localização, organização estrutural e modi
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU SecStruct.PNG" width="800">
 
-##### Figura 17
+##### Figura 17 – Lista de features da GLMU, obtida do PDB, com código de acesso 4AAW, de S. pneumonieae. As estruturas α-hélices e folhas β encontram-se representadas a vermelho e bege, respetivamente, na linha Secsstruc
 <br />
 
 Com recurso ao NetPhosBac estudámos os locais de fosforilação nos resíduos de serina, treonina e tirosina, na GLMU. Os resultados obtidos encontram-se na figura 18, em que T é a treonina, S a serina e Y a tirosina. Comparámos as possíveis posições de fosforilação, com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da GLMU. Verificámos que poderá existir fosforilação nas posições 18, 96, 146, 169, 284, 312, 318, 364, 400 e 434. Por comparação com as features da GLMU, verificamos nenhuma destas posições corresponde a locais de ligação a substrato ou cofatores, pelo que as fosforilações não terão impacto na interação entre enzima e substrato.
