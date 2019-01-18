@@ -516,6 +516,16 @@ Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em
 <br />
 9.	 Drugbank: Trimethoprim. https://www.drugbank.ca/drugs/DB00440
 <br />
-10.	 de Jonge BLM, Kutschke A, Uria-Nickelsen M, Kamp HD, Mills SD (2009) Pyrazolopyrimidinediones are selective agents for Helicobacter pylori that suppress growth through inhibition of glutamate racemase (MurI). American Society for Microbiology. 53 (8): 3331–6. doi:10.1128/AAC.00226-09.
 <br />
-11.	 Mochalkin I, Lightle S, Narasimhan L, Bornemeier D, Melnick M, Vanderroest S, McDowell L (2008) Structure of a small-molecule inhibitor complexed with GlmU from Haemophilus influenzae reveals an allosteric binding site. Protein Science. 17 (3): 577–82. doi: 10.1110/ps.073271408.
+10.	review
+<br />
+<br />
+11.	Lundqvist T, Fisher SL, Kern G, Folmer RHA, Xue Y, Newton DT, et al. (2007) Exploitation of structural and regulatory diversity in glutamate racemases. Nature. 447: 817–22
+<br />
+12.	de Jonge BLM, Kutschke A, Uria-Nickelsen M, Kamp HD, Mills SD (2009) Pyrazolopyrimidinediones are selective agents for Helicobacter pylori that suppress growth through inhibition of glutamate racemase (MurI). American Society for Microbiology. 53 (8): 3331–6. doi:10.1128/AAC.00226-09.
+<br />
+13.	Breault G, Eyermann CJ, Comita-Prevoir J, Geng B, Petrichko R. (2007) Hit to lead studies: exploring 8-benzyl pteridine 6,7-diones as inhibitors of glutamate racemase (MurI) in Gram positive bacteria. 47th ICAAC Meeting, Chicago, IL, USA, Abs: F1-336.
+<br />
+14.	Mochalkin I, Lightle S, Narasimhan L, Bornemeier D, Melnick M, Vanderroest S, McDowell L (2008) Structure of a small-molecule inhibitor complexed with GlmU from Haemophilus influenzae reveals an allosteric binding site. Protein Science. 17 (3): 577–82. doi: 10.1110/ps.073271408.
+<br />
+
