@@ -41,6 +41,7 @@ Para verificar a essencialidade dos genes, verificou-se se estes estão presente
 Selecionaram-se 3 genes da lista de genes essenciais descrita no parágrafo anterior: SA1259, SA0997 e SA0457 e as suas respetivas traduções (Dihydrofolate reductase, Glutamate racemase e UDP-N-acetylglucosamine), e para cada destes, retiraram-se as suas informações do Uniprot (tais como a sua sequência de aminoácidos, referências e outras informações pertinentes). Para além disso, também foram lidos os dados do NCBI CDD, em que se obtém os domínios conservados de cada proteína; foram usados o Phobius e Boctopus para encontrar domínios transmembranares alfa e beta, respetivamente; PDB para obter informações estruturais de cada proteína; LocTree3 para a localização sub-celular e CBS para deteção de locais de ligação (por fosforilação); tudo isto para aumentar a compreensão acerca de cada proteína, o que será útil para definição de drogas terapêuticas.
 <br />
 
+
 ```python
 #bibliotecas utilizadas
 from Bio import Entrez #Para aceder ao NCBI
@@ -338,7 +339,6 @@ for i in glmU.features:
 
 # Proteínas
 <br />
-
 ## Dihidrofolato redutase
 Dihidrofolato redutase (DHFR), com id de acessão P99079 na base de dados Protein do NCBI e no UniProt (com score de anotação 3/5 no UniProt), é proveniente do gene folA, com id de acessão SA1259. Esta enzima é importante no metabolismo do folato, que cataliza a reação representada na figura 1. Esta é uma reação essencial para a síntese de novo de glicina e purina, e para a síntese de precursores de DNA, como a timina. A estrutura tridimensional da enzima encontra-se representada na figura 2, em que se encontra ligado o NADP+.
 <br />
@@ -357,22 +357,30 @@ Com recurso a biopython, importamos o ficheiro genbank da enzima dihidrofolato r
 <br />
 De seguida procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com recurso ao LocTree3, previmos a localização sub-celular da DHFR. O resultado encontra-se na figura 3. A enzima será citoplasmática e tendo em conta a função que desempenha, a localização faz algum sentido. Usámos o Phobius e Boctupus para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 4 e verificam a inexistência de domínios transmembranares em ambos os casos, que corrobora o resultado obtido pelo LocTree3, de que a enzima será citoplasmática. Recorrendo ao PDB, usado atrás para a estrutura 3D da enzima, podemos avaliar a existência de α-hélices e folhas β. Na figura 5 encontra-se uma lista de ‘features’ da proteína. Na linha ‘Secstruc’ verificamos a existência de 4 hélices e 10 folhas β, corroborado, também, pela observação da estrutura tridimensional.
 <br />
+
+<img src="%23SA1259  Dihydrofolate reductase/loc_sub_celular.PNG">
+
+##### Figura 3
 <br />
-####################FALTA IMAGEM#################################
+
+<img src="%23SA1259  Dihydrofolate reductase/Dom_TransMemb_alpha.PNG" width="650"> <img src="%23SA1259  Dihydrofolate reductase/Dom_TransMemb_bet.PNG" width="600">
+
+##### Figura 4
 <br />
+
+<img src="%23SA1259  Dihydrofolate reductase/DHFR SecStruct.PNG" width="800">
+
+##### Figura 5
 <br />
-####################FALTA IMAGEM#################################
-<br />
-<br />
-####################FALTA IMAGEM#################################
-<br />
-<br />
+
 Procedemos à identificação de possíveis modificações pós-tradução, que alteram as características da proteína, alteram polaridade e tamanho dos aminoácidos, afetando a ligação da proteína ao substrato, a localização subcelular pode ser determinada por estas modificações. Estudamos a fosforilação, nos resíduos de serina, treonina e tyrosina, na DHFR através do NetPhosBac. Os resultados obtidos encontram-se na figura 6, em que T é a treonina, S a serina e Y a tirosina. Tendo representadas as possíveis posições de fosforilação, podemos comparar com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da enzima. Verificamos que existe fosforilação nas posições 36, 40, 79, 136 e 137. Por comparação com as features, verificamos que as fosforilações não afetarão os locais de ligação de substrato, pelo que estas modificações não terão impacto no modo de ligação dos substratos. 
 <br />
+
+<img src="%23SA1259  Dihydrofolate reductase/DHFR_locais_fosf.pdf" width="800">
+
+##### Figura 6
 <br />
-####################FALTA IMAGEM#################################
-<br />
-<br />
+
 Os domínios conservados na sequência também foram determinados, com recurso ao ScanProsite e CDD do NCBI. Os motivos geralmente estão relacionados com determinadas funções biológicas. Assim, a determinação de motivos conservados será útil no design de fármacos, por se ter o conhecimento, por exemplo de locais de ligação de metais, substratos ou outras funções associadas aos motivos. Em ambas as ferramentas é detetado o motivo pertencente à superfamília DHFR (dihidrofolato redutase), característico deste tipo de enzimas. Verificamos que há um “match”, significativo, com quase toda a totalidade da enzima. No caso do CDD ainda é possível verificar as posições de interação dos dois substratos com aminoácidos individuais, que correspondem às mesmas posições presentes nas features obtidas com biopython. Estes locais são potenciais alvos de drogas contra a DHFR.
 <br />
 Trimethoprim é uma droga que actua como um análogo de pirimidina e que perturba a síntese de folato, essencial para a via de síntese de timidina. A inibição da DHPR faz com que o organismo não sintetise os nucleótidos necessários para a replicação de DNA, actuando como uma bactericida. Trimethoprim liga-se à proteína e inibe a redução de ácido dihidrofólico (DHF) para ácido tetrahidrofólico (THF). Sendo que THF é um precursor essencial na via de síntese de timidina, há deste modo uma inibição da síntese de DNA. Adicionalmente, Trimethoprim apresenta uma muito maior afinidade para a DHPR da bactéria do que para a humana, o que faz desta proteína um bom alvo terapêutico. Trimethoprim actua melhor em conjunto com Sulfamethoxazole, uma droga que inibe outra enzima envolvida na mesma via, a dihidropteroato sintetase. Esta combinação das duas drogas funciona melhor do que o Trimethoprim por si só, pois reduz o desenvolvimento de resistência por parte de S. aureus a estas drogas[9].
