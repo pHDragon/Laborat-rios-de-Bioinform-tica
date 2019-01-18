@@ -412,7 +412,7 @@ Procedemos ao estudo da localização, organização estrutural e modificações
 
 <img src="%23 SA0997 Glutamate racemase/loc_sub_celular.PNG" width="700">
 
-##### Figura 9
+##### Figura 9 – Localização subcelular da GLUR prevista pelo LocTree3
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/Dom_TransMemb_alpha.PNG" width="650"> <img src="%23 SA0997 Glutamate racemase/Dom_TransMemb_bet.PNG" width="400">
