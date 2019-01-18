@@ -40,7 +40,7 @@ Para verificar a essencialidade dos genes, verificou-se se estes estão presente
 <br />
 Selecionaram-se 3 genes da lista de genes essenciais descrita no parágrafo anterior: SA1259, SA0997 e SA0457 e as suas respetivas traduções (Dihydrofolate reductase, Glutamate racemase e UDP-N-acetylglucosamine), e para cada destes, retiraram-se as suas informações do Uniprot (tais como a sua sequência de aminoácidos, referências e outras informações pertinentes). Para além disso, também foram lidos os dados do NCBI CDD, em que se obtém os domínios conservados de cada proteína; foram usados o Phobius e Boctopus para encontrar domínios transmembranares alfa e beta, respetivamente; PDB para obter informações estruturais de cada proteína; LocTree3 para a localização sub-celular e CBS para deteção de locais de ligação (por fosforilação); tudo isto para aumentar a compreensão acerca de cada proteína, o que será útil para definição de drogas terapêuticas.
 <br />
-
+<br />
 
 ```python
 #bibliotecas utilizadas
@@ -358,7 +358,7 @@ Com recurso a biopython, importamos o ficheiro genbank da enzima dihidrofolato r
 De seguida procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com recurso ao LocTree3, previmos a localização sub-celular da DHFR. O resultado encontra-se na figura 3. A enzima será citoplasmática e tendo em conta a função que desempenha, a localização faz algum sentido. Usámos o Phobius e Boctupus para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 4 e verificam a inexistência de domínios transmembranares em ambos os casos, que corrobora o resultado obtido pelo LocTree3, de que a enzima será citoplasmática. Recorrendo ao PDB, usado atrás para a estrutura 3D da enzima, podemos avaliar a existência de α-hélices e folhas β. Na figura 5 encontra-se uma lista de ‘features’ da proteína. Na linha ‘Secstruc’ verificamos a existência de 4 hélices e 10 folhas β, corroborado, também, pela observação da estrutura tridimensional.
 <br />
 
-<img src="%23SA1259  Dihydrofolate reductase/loc_sub_celular.PNG">
+<img src="%23SA1259  Dihydrofolate reductase/loc_sub_celular.PNG" width="700">
 
 ##### Figura 3
 <br />
@@ -376,7 +376,7 @@ De seguida procedemos ao estudo da localização, organização estrutural e mod
 Procedemos à identificação de possíveis modificações pós-tradução, que alteram as características da proteína, alteram polaridade e tamanho dos aminoácidos, afetando a ligação da proteína ao substrato, a localização subcelular pode ser determinada por estas modificações. Estudamos a fosforilação, nos resíduos de serina, treonina e tyrosina, na DHFR através do NetPhosBac. Os resultados obtidos encontram-se na figura 6, em que T é a treonina, S a serina e Y a tirosina. Tendo representadas as possíveis posições de fosforilação, podemos comparar com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da enzima. Verificamos que existe fosforilação nas posições 36, 40, 79, 136 e 137. Por comparação com as features, verificamos que as fosforilações não afetarão os locais de ligação de substrato, pelo que estas modificações não terão impacto no modo de ligação dos substratos. 
 <br />
 
-<img src="%23SA1259  Dihydrofolate reductase/DHFR_locais_fosf.pdf" width="800">
+<img src="%23SA1259  Dihydrofolate reductase/DHFR_locais_fosf.png">
 
 ##### Figura 6
 <br />
