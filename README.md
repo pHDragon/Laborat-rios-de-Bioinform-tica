@@ -463,7 +463,7 @@ Novamente procedemos ao estudo da localização, organização estrutural e modi
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/loc_celular.PNG" width="700">
 
-##### Figura 15
+##### Figura 15 – Localização subcelular da GLMU prevista pelo LocTree3
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Dom_TransMemb_alpha.PNG" width="650"> <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Dom_TransMemb_bet.PNG" width="400">
