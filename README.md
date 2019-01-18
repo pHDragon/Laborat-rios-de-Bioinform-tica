@@ -448,7 +448,7 @@ N-acetilglucosamina-1-fosfato uridiltransferase (GLMU), com id de acessão Q7A7B
 <br />
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU reaction.PNG">
 
-##### Figura 13
+##### Figura 13 – Reação catalisada pela enzima GLMU, EC 5.1.1.3
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU 3D.PNG" width="400">
