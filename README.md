@@ -430,7 +430,7 @@ De seguida identificamos locais de possíveis modificações pós-tradução. Es
 
 <img src="%23 SA0997 Glutamate racemase/GluRace_locais_fosf.PNG">
 
-##### Figura 12
+##### Figura 12 – Posições de fosforilação na GLUR previstas pelo NetPhosBac
 <br />
 
 Mais uma vez foram determinados os domínios conservados, com recurso ao ScanProsite e CDD do NCBI. Em ambas as ferramentas é detetado o motivo pertencente à superfamília Asp_Glu_race (Asp/Glu/Hydantoin racemase). Pertencem a esta família racemases relacionadas evolucionariamente, que não necessitam de cofatores para a sua atividade enzimática. Verificamos que há um “match” de duas regiões pequenas, típicas nesta superfamília.
