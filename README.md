@@ -453,7 +453,7 @@ N-acetilglucosamina-1-fosfato uridiltransferase (GLMU), com id de acessão Q7A7B
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU 3D.PNG" width="400">
 
-##### Figura 14
+##### Figura 14 – Imagem tridimensional da GLMU, obtida do PDB através do código de acessão 4AAW.
 <br />
 
 Novamente com o biopython, importamos o ficheiro genbank da enzima glutamato racemase. Extraímos as features e outras informações relevantes. Todas as anotações do ficheiro do UniProt estão em anexo. Verificámos que a enzima tem um comprimento de 450 aminoácidos e nas features é possível identificar os locais de ligação dos substratos (UDP-GlcNAc, acetil-coA, Mg2+) aos locais da enzima. Estes valores correspondem aos aminoácidos que participam na ligação dos substratos à enzima, útil para o design de drogas.
