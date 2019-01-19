@@ -444,11 +444,7 @@ Embora a glutamato racemase em S. aureus não esteja ainda descrita com alvo de 
 <br />
 Outro grupo de inibidores de glutamato racemase são as 8-benzil pteridine-6,7-dionas, com atividade inibitória em bactérias Gram-positivas[13]. Estes inibidores têm origem noutro grupo de inibidores, as 9-benzil purinas, que não demonstraram ter atividade contra a glutamato racemase de S. aureus, emboram demonstrassem inibir a de espécies próximas como Enterococcus faecalis e Enterococcus faecium[14]. No entanto, as 8-benzil pteridine-6,7-dionas já demonstraram ter um espectro de acção mais alargado, que inclui S. aureus.
 <br />
-<br />
-#################FALTA IMAGEM##############################
-<br />
-
-<img src="%23 Benzil purina e 8-benzil pteridinediona.jpg">
+<img src="%23 SA0997 Glutamate racemase/Benzil purina e 8-benzil pteridinediona.jpg">
 
 ##### Figura 14 -Benzil purina e 8-benzil pteridinediona.
 <br />
