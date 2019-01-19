@@ -513,15 +513,11 @@ Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Molécula inibidora da GlmU.jpg">
 
-<br />
-
 ##### Figura 22 - Molécula inibidora da GlmU.
 
 <br />
 #################### (FILOGENIA)#################################
 #################################(REGULAÇÃO)#################################
-<br />
-<br />
 
 # Referências
 <br />
