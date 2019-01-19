@@ -16,30 +16,39 @@
 <br />
 
 ## Introdução
-<br />
+
 *Staphylococcus aureus* é uma bactéria gram-positiva, com forma arredondada, pertencente ao filo Firmicutes e é um membro frequente da microbiota do corpo humano. Normalmente é um organismo comensal, podendo ser um agente patogénico, envolvido em diversas doenças, como infeções da pele, pneumonia, meningite, osteomielite, sépsia, endocardite, entre outros. As estirpes patogénicas promovem infeções através da produção de fatores de virulência. O aparecimento de estirpes de *S. aureus* resistentes a antibióticos é um problema a nível mundial.
-<br />
+
+
 O tratamento preferencial para infeções de *S. aureus* é a penicilina, que inibe a síntese das ligações cruzadas entre os aminoácidos do peptidoglicano. No entanto, em muitos países a resistência a penicilina é extremamente comum. A alternativa é frequentemente um antibiótico de β-lactama resistente a penicilase. Os antibióticos β-lactâmicos resistentes, ainda são utilizados como primeira linha de tratamento. A meticilina foi o primeiro antibiótico a ser usado, sendo introduzido em 1959, mas apenas dois anos depois, o primeiro caso de *S. aureus* resistente à meticilina (MRSA).
-<br />
+
+
 Devido a esta resistência, foram desenvolvidos antibióticos não β-lactâmicos, como a clindamicina e trimetoprim/sulfametoxazole. Resistência a estes antibióticos também apareceu, que levou ao uso de novos antibióticos abrangentes para bactérias gram-positivas. Antibióticos usados em tratamento de infeções devido a MRSA são, atualmente, antibióticos glicopeptídicos, como a vancomicina e teicoplanina.
-<br />
+
+
 O aparecimento de estirpes resistentes a antibióticos, como é o caso das MRSA e VRSA, e a habilidade de ultrapassar a eficácia dos medicamentos disponíveis no mercado e desenvolver resistências, enfatiza a necessidade urgente de se desenvolverem novas drogas para prevenir e controlar infeções relacionadas com *S. aureus*.
 
 
 ## Procedimento
-<br />
+
 Recorrendo ao comando Entrez. efetch(), faz-se pesquisas de entradas no Pubmed relacionadas com o organismo de interesse e, utilizando o id do genoma do *S. aureus* no NCBI (BA000018.3), retira-se (sob o formato GenBank) a sequência completa do genoma, bem como anotações contendo informações tais como o organismo e taxonomia, as fontes e referências, contendo também informações acerca dos genes e CDS, tais como os seus nomes, localização na sequência, tradução e chaves a usar nas bases de dados pertinentes ao trabalho. Guarda-se estes dados automaticamente num ficheiro GenBank. As anotações deste ficheiro encontram-se em anexo.
-<br />
+
+
 Com o propósito de limitar o número de genes a utilizar no resto do procedimento, de modo a ser proveitoso em termos de custo computacional e de tempo, para além de obtermos já os genes essenciais que será útil para o passo seguinte, recorremos ao modelo do repositório do *S. aureus* N315 e fizemos uma simulação de genes essenciais, com a função objetivo R_biomass_SA_8a, obtendo 168 genes essenciais. Colocam-se os nomes desses genes numa lista no Python, e através de um ciclo, comparando os nomes desses genes à anotação de cada CDS, restringimos a informação a ser utilizada a partir daqui.
-<br />
+
+
 Para cada um dos genes selecionados procedeu-se à procura de genes homólogos com o genoma humano, através de BLAST (‘blastn’ por serem sequências de nucleótidos). No BioPython, isto é possível fazer remotamente, através do comando NCBIWWW.qblast, sendo a base de dados usada ‘nr’, e a limitação ao genoma humano é feita pela definição do parâmetro entrez_query='txid9606 [ORGN]' (sendo este código a identificação do genoma humano). Para propósito de diminuir o custo computacional, definiu-se o número máximo de alinhamentos, hitlist_size, como 25 (metade do default).
-<br />
+
+
 Definiu-se o threshold de 0.05 para o e-value, em que alinhamentos cujos e-values sejam menores que esse limite são considerados como alinhamentos significativos (portanto, genes com homologia no genoma humano), e valores acima do limite assumem-se como alinhamentos sem homologia. Encontraram-se 101 genes essenciais sem homologia no genoma humano (em anexo).
-<br />
+
+
 Para verificar a essencialidade dos genes, verificou-se se estes estão presentes no DEG, que é uma base de dados de genes essenciais. Verificou-se uma grande discrepância entre os genes essenciais obtidos pelo Optflux e os indicados nesta base de dados, mas de modo a garantir análise a genes dos quais se tinha a certeza da sua essencialidade, selecionou-se os genes essenciais presentes tanto no Optflux e DEG, sem homologia nos humanos, sendo o número destes genes apenas 16 (em anexo).
-<br />
+
+
 Selecionaram-se 3 genes da lista de genes essenciais descrita no parágrafo anterior: SA1259, SA0997 e SA0457 e as suas respetivas traduções (Dihydrofolate reductase, Glutamate racemase e UDP-N-acetylglucosamine), e para cada destes, retiraram-se as suas informações do Uniprot (tais como a sua sequência de aminoácidos, referências e outras informações pertinentes). Para além disso, também foram lidos os dados do NCBI CDD, em que se obtém os domínios conservados de cada proteína; foram usados o Phobius e Boctopus para encontrar domínios transmembranares alfa e beta, respetivamente; PDB para obter informações estruturais de cada proteína; LocTree3 para a localização sub-celular e CBS para deteção de locais de ligação (por fosforilação); tudo isto para aumentar a compreensão acerca de cada proteína, o que será útil para definição de drogas terapêuticas.
-<br />
+
+
 <br />
 
 ```python
@@ -341,7 +350,8 @@ for i in glmU.features:
 <br />
 
 ## Dihidrofolato redutase
-<br />
+
+
 Dihidrofolato redutase (DHFR), com id de acessão P99079 na base de dados Protein do NCBI e no UniProt (com score de anotação 3/5 no UniProt), é proveniente do gene folA, com id de acessão SA1259. Esta enzima é importante no metabolismo do folato, que cataliza a reação representada na figura 1. Esta é uma reação essencial para a síntese de novo de glicina e purina, e para a síntese de precursores de DNA, como a timina. A estrutura tridimensional da enzima encontra-se representada na figura 2, em que se encontra ligado o NADP+.
 <br />
 <br />
