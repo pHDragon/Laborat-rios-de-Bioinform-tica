@@ -535,9 +535,7 @@ Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em
 <br />
 9.	 Drugbank: Trimethoprim. https://www.drugbank.ca/drugs/DB00440
 <br />
-<br />
 10.	Fisher SL (2008) Glutamate racemase as a target for drug discovery. Microbial Biotechnology. 1 (5): 345–60. doi:10.1111/j.1751-7915.2008.00031.x
-<br />
 <br />
 11.	Lundqvist T, Fisher SL, Kern G, Folmer RHA, Xue Y, Newton DT, et al. (2007) Exploitation of structural and regulatory diversity in glutamate racemases. Nature. 447: 817–22
 <br />
