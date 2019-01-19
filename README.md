@@ -503,8 +503,9 @@ Utilizámos o ScanProsite e CDD do NCBI, para determinar os motivos conservados 
 Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em Haemophilus influenzae, que ocupa um centro alostérico adjacente ao local de ligação do substrato GlcNAc-1-P, previnindo, deste modo, a ocorrência de rearranjos estruturais necessários para que haja a reação catalisada pela enzima[15]. Não se verificou, no entanto, atividade contra a GlmU de bactérias Gram-positivas, incluindo a de S. aureus. A GlmU destes organismos contém uma substituição num resíduo no centro alostérico relativamente à GlmU de Haemophilus influenzae, o que impede a interação entre o inibidor e a enzima. Contudo, estes resultados sugerem que o centro alostérico pode ser utilizado para criar compostos com uma melhor afinidade para ortólogos de GlmU, abrindo assim as portas para o desenvolvimento de uma nova classe de drogas em S. aureus tendo esta enzima com alvo terapêutico.
 
 <br />
-<br />
-#################FALTA IMAGEM##############################
+
+<img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Molécula inibidora da GlmU.jpg">
+
 <br />
 
 ##### Figura 21 - Molécula inibidora da GlmU.
