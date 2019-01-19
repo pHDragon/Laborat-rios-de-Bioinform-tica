@@ -435,11 +435,22 @@ De seguida identificamos locais de possíveis modificações pós-tradução. Es
 
 Mais uma vez foram determinados os domínios conservados, com recurso ao ScanProsite e CDD do NCBI. Em ambas as ferramentas é detetado o motivo pertencente à superfamília Asp_Glu_race (Asp/Glu/Hydantoin racemase). Pertencem a esta família racemases relacionadas evolucionariamente, que não necessitam de cofatores para a sua atividade enzimática. Verificamos que há um “match” de duas regiões pequenas, típicas nesta superfamília.
 <br />
-Embora a glutamato racemase em S. aureus não esteja ainda descrita com alvo de drogas terapêuticas conhecidas, já foram identificados em diferentes espécies de bactérias vários tipos de inibidores desta enzima, incluindo “mechanism and substrate-based inhibitors”, inibidores alostéricos, e “large molecule inhibitors”[10]. Um exemplo de inibidores alostéricos que foram identificados são os Pyrazolopyrimidinediones que mostraram inibir a glutamato racemase em Helicobacter pylori[11]. Estes inibidores exibem uma inibição reversível, e a ligação da enzima ao substrato é necessária para que haja inibição, pois o local de ligação do inibidor só fica acessível após a ligação do substrato ao centro ativo devido à deslocação da hélice C-terminal. Embora a actividade destes inibidores tenha sido testada para várias espécies, incluindo S. aureus, estes mostraram possuir elevada afinidade apenas para a glutamato racemase de H. pylori[12].
+Embora a glutamato racemase em S. aureus não esteja ainda descrita com alvo de drogas terapêuticas conhecidas, já foram identificados em diferentes espécies de bactérias vários tipos de inibidores desta enzima, incluindo “mechanism and substrate-based inhibitors”, inibidores alostéricos, e “large molecule inhibitors”[10]. Um exemplo de inibidores alostéricos que foram identificados são as pirazolopirimidinedionas, que mostraram inibir a glutamato racemase em Helicobacter pylori[11]. Estes inibidores exibem uma inibição reversível, e a ligação da enzima ao substrato é necessária para que haja inibição, pois o local de ligação do inibidor só fica acessível após a ligação do substrato ao centro ativo devido à deslocação da hélice C-terminal. Embora a actividade destes inibidores tenha sido testada para várias espécies, incluindo S. aureus, estes mostraram possuir elevada afinidade apenas para a glutamato racemase de H. pylori[12].
+
+
 <br />
-Os 8-benzyl pteridine-6,7-diones pertencem a outro grupo de inibidores de glutamato racemase, em bactérias Gram-positivas[13]. Mais uma vez, estes inibidores não mostraram atividade contra a glutamato racemase de S. aureus, embora tenham demonstrado inibir a enzima noutras espécies próximas, como Enterococcus faecalis e Enterococcus faecium.
 <br />
-A elevada conservação e essencialidade da glutamato racemase, em conjunto com os vários inibidores já identificados, prova que esta enzima é um bom potencial alvo terapêutico, embora se tenha de ter em consideração as pequenas diferenças estruturais e bioquímicas da enzima entre diferentes espécies para a identificação de inibidores em S. aureus.
+#################FALTA IMAGEM##############################
+<br />
+<br />
+Outro grupo de inibidores de glutamato racemase são as 8-benzil pteridine-6,7-dionas, com atividade inibitória em bactérias Gram-positivas[13]. Estes inibidores têm origem noutro grupo de inibidores, as 9-benzil purinas, que não demonstraram ter atividade contra a glutamato racemase de S. aureus, emboram demonstrassem inibir a de espécies próximas como Enterococcus faecalis e Enterococcus faecium[14]. No entanto, as 8-benzil pteridine-6,7-dionas já demonstraram ter um espectro de acção mais alargado, que inclui S. aureus.
+<br />
+<br />
+#################FALTA IMAGEM##############################
+<br />
+<br />
+<br />
+A elevada conservação e essencialidade da glutamato racemase, em conjunto com os vários inibidores já identificados, prova que esta enzima é um bom potencial alvo terapêutico, embora se tenha de ter em consideração as pequenas diferenças estruturais e bioquímicas da enzima entre diferentes espécies para o desenvolvimento de novas drogas em S. aureus.
 <br />
 <br />
 
@@ -488,7 +499,15 @@ Com recurso ao NetPhosBac estudámos os locais de fosforilação nos resíduos d
 
 Utilizámos o ScanProsite e CDD do NCBI, para determinar os motivos conservados na GLMU. No caso do ScanProsite, foram detetadas duas regiões conservadas, ‘LuxR-type’ HTH e ‘Hexapeptide-repeat containing-transferases’. No primeiro caso foi identificado um domínio de ligação ao DNA. No entanto, tendo em conta as funções já descritas desta enzima e o nível de confiança obtido, este motivo não estará associado à enzima. A segunda região conservada está associada à atividade de transferase. Tendo em conta a descrição atrás da atividade de acetiltransferase da GLMU, este motivo estará associado a essa atividade, visto a sua posição ser também no C-terminal. No CDD foi encontrada uma superfamília GlmU. Verificámos que há uma homologia forte com as enzimas pertencentes a esta família, todas elas com as mesmas atividades.
 <br />
-Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em Haemophilus influenzae, que ocupa um centro alostérico adjacente ao local de ligação do substrato GlcNAc-1-P, previnindo, deste modo, a ocorrência de rearranjos estruturais necessários para que haja a reação catalisada pela enzima[11]. Não se verificou, no entanto, atividade contra a GlmU de bactérias Gram-positivas, incluindo a de S. aureus. A GlmU destes organismos contém uma substituição num resíduo no centro alostérico relativamente à GlmU de Haemophilus influenzae, o que impede a interação entre o inibidor e a enzima. Contudo, estes resultados sugerem que o centro alostérico pode ser utilizado para criar compostos com uma melhor afinidade para ortólogos de GlmU, abrindo assim as portas para o desenvolvimento de uma nova classe de drogas em S. aureus tendo esta enzima com alvo terapêutico.
+Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em Haemophilus influenzae, que ocupa um centro alostérico adjacente ao local de ligação do substrato GlcNAc-1-P, previnindo, deste modo, a ocorrência de rearranjos estruturais necessários para que haja a reação catalisada pela enzima[15]. Não se verificou, no entanto, atividade contra a GlmU de bactérias Gram-positivas, incluindo a de S. aureus. A GlmU destes organismos contém uma substituição num resíduo no centro alostérico relativamente à GlmU de Haemophilus influenzae, o que impede a interação entre o inibidor e a enzima. Contudo, estes resultados sugerem que o centro alostérico pode ser utilizado para criar compostos com uma melhor afinidade para ortólogos de GlmU, abrindo assim as portas para o desenvolvimento de uma nova classe de drogas em S. aureus tendo esta enzima com alvo terapêutico.
+
+<br />
+<br />
+#################FALTA IMAGEM##############################
+<br />
+<br />
+
+
 <br />
 <br />
 #################### (FILOGENIA)#################################
@@ -517,7 +536,7 @@ Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em
 9.	 Drugbank: Trimethoprim. https://www.drugbank.ca/drugs/DB00440
 <br />
 <br />
-10.	review
+10.	Fisher SL (2008) Glutamate racemase as a target for drug discovery. Microbial Biotechnology. 1 (5): 345–60. doi:10.1111/j.1751-7915.2008.00031.x
 <br />
 <br />
 11.	Lundqvist T, Fisher SL, Kern G, Folmer RHA, Xue Y, Newton DT, et al. (2007) Exploitation of structural and regulatory diversity in glutamate racemases. Nature. 447: 817–22
@@ -526,6 +545,8 @@ Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em
 <br />
 13.	Breault G, Eyermann CJ, Comita-Prevoir J, Geng B, Petrichko R. (2007) Hit to lead studies: exploring 8-benzyl pteridine 6,7-diones as inhibitors of glutamate racemase (MurI) in Gram positive bacteria. 47th ICAAC Meeting, Chicago, IL, USA, Abs: F1-336.
 <br />
-14.	Mochalkin I, Lightle S, Narasimhan L, Bornemeier D, Melnick M, Vanderroest S, McDowell L (2008) Structure of a small-molecule inhibitor complexed with GlmU from Haemophilus influenzae reveals an allosteric binding site. Protein Science. 17 (3): 577–82. doi: 10.1110/ps.073271408.
+14.	Geng B, Breault G, Comita-Prevoir J, Petrichko R, Eyermann JC, Doig P, Gorseth E, Noonan B (2008) Bioorg. Med. Chem. Lett., 18, 4368.
+<br />
+15.	Mochalkin I, Lightle S, Narasimhan L, Bornemeier D, Melnick M, Vanderroest S, McDowell L (2008) Structure of a small-molecule inhibitor complexed with GlmU from Haemophilus influenzae reveals an allosteric binding site. Protein Science. 17 (3): 577–82. doi: 10.1110/ps.073271408.
 <br />
 
