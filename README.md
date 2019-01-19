@@ -420,7 +420,8 @@ Trimethoprim é uma droga que actua como um análogo de pirimidina e que perturb
 <br />
 
 ## Glutamato racemase
-<br />
+
+
 A glutamato racemase (GLUR), com id de acessão P63638, na base de dados Protein do NCBI e no UniProt (com score de anotação 2/5 no UniProt), é resultado da transcrição e tradução do gene murI, com id de acessão SA0997. A enzima está envolvida no metabolismo do glutamato, essencial para a biossíntese da parede celular em bactérias, formando D-glutamato a partir de L-glutamato, reação representada na figura 9. D-glutamato é um monómero da camada de peptidoglicano, um componente essencial na estrutura da parede celular em bactérias. A conservação do glutamato racemase e a sua essencialidade no crescimento em procariotas faz desta enzima um bom alvo para a descoberta de potenciais drogas. A estrutura tridimensional da GLUR encontra-se representada na figura 10, em que se encontram ligadas duas moléculas de D-glutamato. Por esta estrutura, é possível perceber que a enzima é um homodímero.
 <br />
 
@@ -499,7 +500,8 @@ A elevada conservação e essencialidade da glutamato racemase, em conjunto com 
 <br />
 
 ## N-acetilglucosamina-1-fosfato uridiltransferase
-<br />
+
+
 N-acetilglucosamina-1-fosfato uridiltransferase (GLMU), com id de acessão Q7A7B4, na base de dados Protein do NCBI e no UniProt (com score de anotação 5/5 no UniProt), é resultado da transcrição e tradução do gene glmU, com id de acessão SA0457, em Nucleotide. Esta enzima é essencial no metabolismo de aminoaçúcares e pode ser também um alvo terapêutico atrativo. GlmU catalisa a formação de uridine-diphospho-N-acetylglucosamine (UDP-GlcNAc), um precursor importante na biossíntese de peptidoglicano e lipopolissacarídeos tanto em bactérias gram-negativas, como gram-positivas. GLMU tem um papel bifuncional a possuir dois centros ativos funcionalmente autónomos: o centro acetiltransferase e o centro uridiltransferase que residem em dois domínios proteicos distintos. A reação de acetiltransferase ocorre no domínio C-terminal (acetiltransferase) e a reação uridiltransferase ocorre no domínio N-terminal (uridiltransferase), figura 18. Para a estrutura tridimensional da GLMU não foi encontrado nenhum modelo. Por isso, realizamos ‘sequence search’ no PDB e escolhemos a sequência mais similar. Optámos pela enzima com id 4AAW (E-value=2.052E-121; Identities=49%; Positives=67%), do organismo S. pneumoniae, com exatamente a mesma função que a GLMU. Esta enzima está representada na figura 19, em que é evidente a presença de um homotrímero. Na parte superior da figura, N-terminal, encontram-se os locais ativos da reação de uridiltransferase; na parte inferior, C-terminal, encontram-se os locais ativos da atividade acetiltransferase.
 <br />
 <br />
