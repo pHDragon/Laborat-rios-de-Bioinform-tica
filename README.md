@@ -449,6 +449,8 @@ Outro grupo de inibidores de glutamato racemase são as 8-benzil pteridine-6,7-d
 #################FALTA IMAGEM##############################
 <br />
 
+<img src="%23 Benzil purina e 8-benzil pteridinediona.jpg">
+
 ##### Figura 14 -Benzil purina e 8-benzil pteridinediona.
 <br />
 <br />
