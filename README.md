@@ -456,45 +456,45 @@ A elevada conservação e essencialidade da glutamato racemase, em conjunto com 
 
 ## N-acetilglucosamina-1-fosfato uridiltransferase
 <br />
-N-acetilglucosamina-1-fosfato uridiltransferase (GLMU), com id de acessão Q7A7B4, na base de dados Protein do NCBI e no UniProt (com score de anotação 5/5 no UniProt), é resultado da transcrição e tradução do gene glmU, com id de acessão SA_RS02635, em Nucleotide. Esta enzima é essencial no metabolismo de aminoaçúcares e pode ser também um alvo terapêutico atrativo. GlmU catalisa a formação de uridine-diphospho-N-acetylglucosamine (UDP-GlcNAc), um precursor importante na biossíntese de peptidoglicano e lipopolissacarídeos tanto em bactérias gram-negativas, como gram-positivas. GLMU tem um papel bifuncional a possuir dois centros ativos funcionalmente autónomos: o centro acetiltransferase e o centro uridiltransferase que residem em dois domínios proteicos distintos. A reação de acetiltransferase ocorre no domínio C-terminal (acetiltransferase) e a reação uridiltransferase ocorre no domínio N-terminal (uridiltransferase), figura 13. Para a estrutura tridimensional da GLMU não foi encontrado nenhum modelo. Por isso, realizamos ‘sequence search’ no PDB e escolhemos a sequência mais similar. Optámos pela enzima com id 4AAW (E-value=2.052E-121; Identities=49%; Positives=67%), do organismo S. pneumoniae, com exatamente a mesma função que a GLMU. Esta enzima está representada na figura 14, em que é evidente a presença de um homotrímero. Na parte superior da figura, N-terminal, encontram-se os locais ativos da reação de uridiltransferase; na parte inferior, C-terminal, encontram-se os locais ativos da atividade acetiltransferase.
+N-acetilglucosamina-1-fosfato uridiltransferase (GLMU), com id de acessão Q7A7B4, na base de dados Protein do NCBI e no UniProt (com score de anotação 5/5 no UniProt), é resultado da transcrição e tradução do gene glmU, com id de acessão SA_RS02635, em Nucleotide. Esta enzima é essencial no metabolismo de aminoaçúcares e pode ser também um alvo terapêutico atrativo. GlmU catalisa a formação de uridine-diphospho-N-acetylglucosamine (UDP-GlcNAc), um precursor importante na biossíntese de peptidoglicano e lipopolissacarídeos tanto em bactérias gram-negativas, como gram-positivas. GLMU tem um papel bifuncional a possuir dois centros ativos funcionalmente autónomos: o centro acetiltransferase e o centro uridiltransferase que residem em dois domínios proteicos distintos. A reação de acetiltransferase ocorre no domínio C-terminal (acetiltransferase) e a reação uridiltransferase ocorre no domínio N-terminal (uridiltransferase), figura 15. Para a estrutura tridimensional da GLMU não foi encontrado nenhum modelo. Por isso, realizamos ‘sequence search’ no PDB e escolhemos a sequência mais similar. Optámos pela enzima com id 4AAW (E-value=2.052E-121; Identities=49%; Positives=67%), do organismo S. pneumoniae, com exatamente a mesma função que a GLMU. Esta enzima está representada na figura 16, em que é evidente a presença de um homotrímero. Na parte superior da figura, N-terminal, encontram-se os locais ativos da reação de uridiltransferase; na parte inferior, C-terminal, encontram-se os locais ativos da atividade acetiltransferase.
 <br />
 <br />
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU reaction.PNG">
 
-##### Figura 13 – Reação catalisada pela enzima GLMU, EC 5.1.1.3
+##### Figura 15 – Reação catalisada pela enzima GLMU, EC 5.1.1.3
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU 3D.PNG" width="400">
 
-##### Figura 14 – Imagem tridimensional da GLMU, obtida do PDB através do código de acessão 4AAW.
+##### Figura 16 – Imagem tridimensional da GLMU, obtida do PDB através do código de acessão 4AAW.
 <br />
 
 Novamente com o biopython, importamos o ficheiro genbank da enzima glutamato racemase. Extraímos as features e outras informações relevantes. Todas as anotações do ficheiro do UniProt estão em anexo. Verificámos que a enzima tem um comprimento de 450 aminoácidos e nas features é possível identificar os locais de ligação dos substratos (UDP-GlcNAc, acetil-coA, Mg2+) aos locais da enzima. Estes valores correspondem aos aminoácidos que participam na ligação dos substratos à enzima, útil para o design de drogas.
 <br />
-Novamente procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com o LocTree3, previmos a localização sub-celular da GLMU. O resultado obtido encontra-se na figura 15, sendo a enzima citoplasmática, resultado também confirmado pelas anotações da página UniProt desta enzima. Tal como atrás, usámos o Phobius e Boctupus para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 16 e verificam que não existem domínios transmembranares em ambos os casos, que confirma o resultado obtido no LocTree3. Recorrendo ao PDB, podemos avaliar a existência de α-hélices e folhas β, recorrendo à enzima usada atrás para avaliar a estrutura 3D. Na figura 17 encontra-se uma lista de ‘features’ desta enzima. Na linha ‘Secstruc’ verificamos a existência de 15 hélices α e cerca de 41 folhas β.
+Novamente procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com o LocTree3, previmos a localização sub-celular da GLMU. O resultado obtido encontra-se na figura 17, sendo a enzima citoplasmática, resultado também confirmado pelas anotações da página UniProt desta enzima. Tal como atrás, usámos o Phobius e Boctupus para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 18 e verificam que não existem domínios transmembranares em ambos os casos, que confirma o resultado obtido no LocTree3. Recorrendo ao PDB, podemos avaliar a existência de α-hélices e folhas β, recorrendo à enzima usada atrás para avaliar a estrutura 3D. Na figura 19 encontra-se uma lista de ‘features’ desta enzima. Na linha ‘Secstruc’ verificamos a existência de 15 hélices α e cerca de 41 folhas β.
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/loc_celular.PNG" width="700">
 
-##### Figura 15 – Localização subcelular da GLMU prevista pelo LocTree3
+##### Figura 17 – Localização subcelular da GLMU prevista pelo LocTree3
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Dom_TransMemb_alpha.PNG" width="650"> <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Dom_TransMemb_bet.PNG" width="400">
 
-##### Figura 16 – Previsão de domínios α-hélice transmembranares da GLMU prevista pelo Phobius (A) e de domínios β-barril pelo Boctupus (B)
+##### Figura 18 – Previsão de domínios α-hélice transmembranares da GLMU prevista pelo Phobius (A) e de domínios β-barril pelo Boctupus (B)
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU SecStruct.PNG" width="800">
 
-##### Figura 17 – Lista de features da GLMU, obtida do PDB, com código de acesso 4AAW, de S. pneumonieae. As estruturas α-hélices e folhas β encontram-se representadas a vermelho e bege, respetivamente, na linha Secsstruc
+##### Figura 19 – Lista de features da GLMU, obtida do PDB, com código de acesso 4AAW, de S. pneumonieae. As estruturas α-hélices e folhas β encontram-se representadas a vermelho e bege, respetivamente, na linha Secsstruc
 <br />
 
-Com recurso ao NetPhosBac estudámos os locais de fosforilação nos resíduos de serina, treonina e tirosina, na GLMU. Os resultados obtidos encontram-se na figura 18, em que T é a treonina, S a serina e Y a tirosina. Comparámos as possíveis posições de fosforilação, com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da GLMU. Verificámos que poderá existir fosforilação nas posições 18, 96, 146, 169, 284, 312, 318, 364, 400 e 434. Por comparação com as features da GLMU, verificamos nenhuma destas posições corresponde a locais de ligação a substrato ou cofatores, pelo que as fosforilações não terão impacto na interação entre enzima e substrato.
+Com recurso ao NetPhosBac estudámos os locais de fosforilação nos resíduos de serina, treonina e tirosina, na GLMU. Os resultados obtidos encontram-se na figura 20, em que T é a treonina, S a serina e Y a tirosina. Comparámos as possíveis posições de fosforilação, com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da GLMU. Verificámos que poderá existir fosforilação nas posições 18, 96, 146, 169, 284, 312, 318, 364, 400 e 434. Por comparação com as features da GLMU, verificamos nenhuma destas posições corresponde a locais de ligação a substrato ou cofatores, pelo que as fosforilações não terão impacto na interação entre enzima e substrato.
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU_locais_fosf.PNG">
 
-##### Figura 18 – Posições de fosforilação na GLMU previstas pelo NetPhosBac
+##### Figura 20 – Posições de fosforilação na GLMU previstas pelo NetPhosBac
 <br />
 
 Utilizámos o ScanProsite e CDD do NCBI, para determinar os motivos conservados na GLMU. No caso do ScanProsite, foram detetadas duas regiões conservadas, ‘LuxR-type’ HTH e ‘Hexapeptide-repeat containing-transferases’. No primeiro caso foi identificado um domínio de ligação ao DNA. No entanto, tendo em conta as funções já descritas desta enzima e o nível de confiança obtido, este motivo não estará associado à enzima. A segunda região conservada está associada à atividade de transferase. Tendo em conta a descrição atrás da atividade de acetiltransferase da GLMU, este motivo estará associado a essa atividade, visto a sua posição ser também no C-terminal. No CDD foi encontrada uma superfamília GlmU. Verificámos que há uma homologia forte com as enzimas pertencentes a esta família, todas elas com as mesmas atividades.
