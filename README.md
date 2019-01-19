@@ -406,7 +406,8 @@ Foi realizado um BLAST tendo como query a sequência proteica da DHFR e foram es
 
 ##### Figura 7 – Árvore filogenética para enzimas homólogas com a DHFR, obtida do alinhamento múltiplo de organismos selecionados com BLAST
 <br />
-<br />
+
+
 Trimethoprim é uma droga que actua como um análogo de pirimidina e que perturba a síntese de folato, essencial para a via de síntese de timidina. A inibição da DHPR faz com que o organismo não sintetise os nucleótidos necessários para a replicação de DNA, actuando como uma bactericida. Trimethoprim liga-se à proteína e inibe a redução de ácido dihidrofólico (DHF) para ácido tetrahidrofólico (THF). Sendo que THF é um precursor essencial na via de síntese de timidina, há deste modo uma inibição da síntese de DNA. Adicionalmente, Trimethoprim apresenta uma muito maior afinidade para a DHPR da bactéria do que para a humana, o que faz desta proteína um bom alvo terapêutico. Trimethoprim actua melhor em conjunto com Sulfamethoxazole, uma droga que inibe outra enzima envolvida na mesma via, a dihidropteroato sintetase. Esta combinação das duas drogas funciona melhor do que o Trimethoprim por si só, pois reduz o desenvolvimento de resistência por parte de *S. aureus* a estas drogas[9].
 
 <br />
