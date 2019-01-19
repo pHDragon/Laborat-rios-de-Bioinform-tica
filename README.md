@@ -437,8 +437,7 @@ Mais uma vez foram determinados os domínios conservados, com recurso ao ScanPro
 <br />
 Embora a glutamato racemase em S. aureus não esteja ainda descrita com alvo de drogas terapêuticas conhecidas, já foram identificados em diferentes espécies de bactérias vários tipos de inibidores desta enzima, incluindo “mechanism and substrate-based inhibitors”, inibidores alostéricos, e “large molecule inhibitors”[10]. Um exemplo de inibidores alostéricos que foram identificados são as pirazolopirimidinedionas, que mostraram inibir a glutamato racemase em Helicobacter pylori[11]. Estes inibidores exibem uma inibição reversível, e a ligação da enzima ao substrato é necessária para que haja inibição, pois o local de ligação do inibidor só fica acessível após a ligação do substrato ao centro ativo devido à deslocação da hélice C-terminal. Embora a actividade destes inibidores tenha sido testada para várias espécies, incluindo S. aureus, estes mostraram possuir elevada afinidade apenas para a glutamato racemase de H. pylori[12].
 <br />
-#################FALTA IMAGEM##############################
-<br />
+<img src="%23 SA0997 Glutamate racemase/Pirazolopirimidinediona.jpg">
 
 ##### Figura 13 – Pirazolopirimidinediona
 
