@@ -396,8 +396,10 @@ Procedemos à identificação de possíveis modificações pós-tradução, que 
 <br />
 
 Os domínios conservados na sequência também foram determinados, com recurso ao ScanProsite e CDD do NCBI. Os motivos geralmente estão relacionados com determinadas funções biológicas. Assim, a determinação de motivos conservados será útil no design de fármacos, por se ter o conhecimento, por exemplo de locais de ligação de metais, substratos ou outras funções associadas aos motivos. Em ambas as ferramentas é detetado o motivo pertencente à superfamília DHFR (dihidrofolato redutase), característico deste tipo de enzimas. Verificamos que há um “match”, significativo, com quase toda a totalidade da enzima. No caso do CDD ainda é possível verificar as posições de interação dos dois substratos com aminoácidos individuais, que correspondem às mesmas posições presentes nas features obtidas com biopython. Estes locais são potenciais alvos de drogas contra a DHFR.
-<br />
+
+
 	Foi realizado um BLAST tendo como query a sequência proteica da DHFR e foram escolhidos 10 organismos, que apresentavam homologia com esta enzima. Com as sequências da DHFR dos 10 organismos e de *S. aureus* realizámos um alinhamento múltiplo, do qual foi depois contruída uma árvore filogenética. A árvore encontra-se na figura 7 e verifica-se um elevado grau de relacionamento entre a DHFR de *S. aureus* com as de Glycine max e Arabidopsis taliana, duas espécies vegetais. Apesar destas duas proteínas terem tamanhos muito superiores à de *S. aureus*, 530 e 408 aminoácidos, respetivamente, demonstram uma zona homologa à DHFR, com uma função associada igual. Relativamente às restantes enzimas bacterianas, todas elas têm um tamanho semelhante à DHFR de *S. aureus*, tendo a mesma função. Estes resultados corroboram os obtidos pelo CDD. A construção de árvores filogenéticas também será útil no estudo de potenciais agentes terapêuticos. Será provável que uma droga que atue numa dada enzima, também seja ativa contra enzimas homólogas de outro organismo. Neste caso, não faz sentido o estudo de drogas para as duas espécies de plantas, devido à maior complexidade do organismo e diferenças significativas relativamente à bactéria. Assim sendo, o descobrimento de drogas como sendo ativas em Escherichia coli, Bacillus subtilis, entre outros será útil, pois estes agentes terapêuticos poderão ser ativos contra a DHFR de *S. aureus*.
+	
 <br />
 
 <img src="%23SA1259  Dihydrofolate reductase/DHFR_tree.PNG">
@@ -459,8 +461,10 @@ De seguida identificamos locais de possíveis modificações pós-tradução. Es
 <br />
 
 Mais uma vez foram determinados os domínios conservados, com recurso ao ScanProsite e CDD do NCBI. Em ambas as ferramentas é detetado o motivo pertencente à superfamília Asp_Glu_race (Asp/Glu/Hydantoin racemase). Pertencem a esta família racemases relacionadas evolucionariamente, que não necessitam de cofatores para a sua atividade enzimática. Verificamos que há um “match” de duas regiões pequenas, típicas nesta superfamília.
-<br />
+
+
 Para a filogenia, foi realizado mais uma vez um BLAST para identificar organismos com homologia na sequência da enzima. Foram escolhidos 9 organismos para fazer alinhamentos múltiplos e construir a árvore filogenética, todos bactérias. As respetivas enzimas têm todas a mesma função (glutamato racemase) e tamanhos muito semelhantes. Estes resultados demonstrativos de homologia entre diferentes espécies ajudam a comprovar os resultados de motivos conservados obtidos com o CDD. A árvore filogenética encontra-se na figura 15. Verifica-se uma maior semelhança entre a GLUR de *S. aureus* com as de *Bacillus subtilis* e *Streptococcus pneumoniae*. De facto, a glutamato racemase é uma enzima com a estrutura e modo de funcionamento muito conservados em diversas bactérias[10]. Assim, o descobrimento de fármacos para a GLUR de espécies bacterianas mais bem estudadas possivelmente levará a estes fármacos também serem ativos contra *S. aureus*.
+
 <br />
 <img src="%23 SA0997 Glutamate racemase/GLUR_tree.PNG">
 
@@ -468,6 +472,7 @@ Para a filogenia, foi realizado mais uma vez um BLAST para identificar organismo
 <br />
 
 Embora a glutamato racemase em *S. aureus* não esteja ainda descrita com alvo de drogas terapêuticas conhecidas, já foram identificados em diferentes espécies de bactérias vários tipos de inibidores desta enzima, incluindo “mechanism and substrate-based inhibitors”, inibidores alostéricos, e “large molecule inhibitors”[10]. Um exemplo de inibidores alostéricos que foram identificados são as pirazolopirimidinedionas, que mostraram inibir a glutamato racemase em Helicobacter pylori[11]. Estes inibidores exibem uma inibição reversível, e a ligação da enzima ao substrato é necessária para que haja inibição, pois o local de ligação do inibidor só fica acessível após a ligação do substrato ao centro ativo devido à deslocação da hélice C-terminal. Embora a actividade destes inibidores tenha sido testada para várias espécies, incluindo *S. aureus*, estes mostraram possuir elevada afinidade apenas para a glutamato racemase de H. pylori[12].
+
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/Pirazolopirimidinediona.jpg">
@@ -475,16 +480,20 @@ Embora a glutamato racemase em *S. aureus* não esteja ainda descrita com alvo d
 ##### Figura 16 - Pirazolopirimidinediona.
 
 <br />
+
 Outro grupo de inibidores de glutamato racemase são as 8-benzil pteridine-6,7-dionas, com atividade inibitória em bactérias Gram-positivas[13]. Estes inibidores têm origem noutro grupo de inibidores, as 9-benzil purinas, que não demonstraram ter atividade contra a glutamato racemase de *S. aureus*, emboram demonstrassem inibir a de espécies próximas como Enterococcus faecalis e Enterococcus faecium[14]. No entanto, as 8-benzil pteridine-6,7-dionas já demonstraram ter um espectro de acção mais alargado, que inclui *S. aureus*.
+
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/Benzil purina e 8-benzil pteridinediona.jpg">
 
 ##### Figura 17 -Benzil purina e 8-benzil pteridinediona.
 <br />
-<br />
+
+
 A elevada conservação e essencialidade da glutamato racemase, em conjunto com os vários inibidores já identificados, prova que esta enzima é um bom potencial alvo terapêutico, embora se tenha de ter em consideração as pequenas diferenças estruturais e bioquímicas da enzima entre diferentes espécies para o desenvolvimento de novas drogas em *S. aureus*.
-<br />
+
+
 <br />
 
 ## N-acetilglucosamina-1-fosfato uridiltransferase
@@ -503,7 +512,8 @@ N-acetilglucosamina-1-fosfato uridiltransferase (GLMU), com id de acessão Q7A7B
 <br />
 
 Novamente com o biopython, importamos o ficheiro genbank da enzima glutamato racemase. Extraímos as features e outras informações relevantes. Todas as anotações do ficheiro do UniProt estão em anexo. Verificámos que a enzima tem um comprimento de 450 aminoácidos e nas features é possível identificar os locais de ligação dos substratos (UDP-GlcNAc, acetil-coA, Mg2+) aos locais da enzima. Estes valores correspondem aos aminoácidos que participam na ligação dos substratos à enzima, útil para o design de drogas.
-<br />
+
+
 Novamente procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com o LocTree3, previmos a localização sub-celular da GLMU. O resultado obtido encontra-se na figura 20, sendo a enzima citoplasmática, resultado também confirmado pelas anotações da página UniProt desta enzima. Tal como atrás, usámos o Phobius e Boctupus para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 21 e verificam que não existem domínios transmembranares em ambos os casos, que confirma o resultado obtido no LocTree3. Recorrendo ao PDB, podemos avaliar a existência de α-hélices e folhas β, recorrendo à enzima usada atrás para avaliar a estrutura 3D. Na figura 22 encontra-se uma lista de ‘features’ desta enzima. Na linha ‘Secstruc’ verificamos a existência de 15 hélices α e cerca de 41 folhas β. 
 <br />
 
@@ -531,14 +541,18 @@ Com recurso ao NetPhosBac estudámos os locais de fosforilação nos resíduos d
 <br />
 
 Utilizámos o ScanProsite e CDD do NCBI, para determinar os motivos conservados na GLMU. No caso do ScanProsite, foram detetadas duas regiões conservadas, ‘LuxR-type’ HTH e ‘Hexapeptide-repeat containing-transferases’. No primeiro caso foi identificado um domínio de ligação ao DNA. No entanto, tendo em conta as funções já descritas desta enzima e o nível de confiança obtido, este motivo não estará associado à enzima. A segunda região conservada está associada à atividade de transferase. Tendo em conta a descrição atrás da atividade de acetiltransferase da GLMU, este motivo estará associado a essa atividade, visto a sua posição ser também no C-terminal. No CDD foi encontrada uma superfamília GlmU. Verificámos que há uma homologia forte com as enzimas pertencentes a esta família, todas elas com as mesmas atividades.
-<br />
+
+
 A GLMU foi ainda analizada por BLAST, de modo a encontrar organismos que partilham homologia. Foram escolhidos 10 organismos, todos eles bactérias. Com a sequência das enzimas dos organismos foram realizados alinhamento múltiplo e foi contruída a árvore filogenética, representada na figura 24. As enzimas dos 10 organismos apresentaram todos sequências e funções semelhantes à GLMU de *S. aureus*, resultados que reforçam as funções associadas à enzima. Da árvore verificamos ainda que há um relacionamento forte entre *S. aureus* e *Bacillus subtilis*, também uma bactéria gram-positiva, e ainda com as enzimas de *Clostridioides difficile* e *Streptococcus pneumoniae*, também gram-positivas. Com este conhecimento, será provável que uma droga desenvolvida para um destes organismos seja ativa contra a enzima de *S. aureus*, devido à elevada homologia, pelo que estudos nestes organismos poderão ser interessantes.
-<br />
+
+
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU_tree.PNG">
 
 ##### Figura 24 – Árvore filogenética para enzimas homólogas com a GLMU, obtida do alinhamento múltiplo de organismos selecionados com BLAST
-<br />
+
+
+
 Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em Haemophilus influenzae, que ocupa um centro alostérico adjacente ao local de ligação do substrato GlcNAc-1-P, previnindo, deste modo, a ocorrência de rearranjos estruturais necessários para que haja a reação catalisada pela enzima[15]. Não se verificou, no entanto, atividade contra a GlmU de bactérias Gram-positivas, incluindo a de *S. aureus*. A GlmU destes organismos contém uma substituição num resíduo no centro alostérico relativamente à GlmU de Haemophilus influenzae, o que impede a interação entre o inibidor e a enzima. Contudo, estes resultados sugerem que o centro alostérico pode ser utilizado para criar compostos com uma melhor afinidade para ortólogos de GlmU, abrindo assim as portas para o desenvolvimento de uma nova classe de drogas em *S. aureus* tendo esta enzima com alvo terapêutico.
 
 <br />
@@ -551,35 +565,49 @@ Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em
 #################################(REGULAÇÃO)#################################
 
 # Referências
-<br />
+
 1.	 Masalha M, Borovok I, Schreiber R, Aharonowitz Y, Cohen G (2001) Analysis of transcription of the *Staphylococcus aureus* aerobic class Ib and anaerobic class III ribonucleotide reductase genes in response to oxygen. Journal of Bacteriology. 183 (24): 7260–72. doi:10.1128/JB.183.24.7260-7272.2001. PMC 95576. PMID 11717286.
-<br />
+
+
 2.	 Chambers HF (2001) The changing epidemiology of *Staphylococcus aureus*? Emerging Infectious Diseases. 7 (2): 178–82. doi:10.3201/eid0702.010204. PMC 2631711. PMID 11294701.
-<br />
+
+
 3.	 Jevons MP (1961) Celbenin-resistant staphylococci. BMJ. 1 (5219): 124–5. doi:10.1136/bmj.1.5219.124-a.
-<br />
+
+
 4.	 Deurenberg, R. H., & Stobberingh, E. E. (2008) The evolution of *Staphylococcus aureus*. Infection, genetics and evolution, 8(6), 747-763.
-<br />
+
+
 5.	 Khan, M. F. (2017) Brief History of *Staphylococcus aureus*: A Focus to Antibiotic Resistance. EC Microbiology, 5, 36-39.
-<br />
+
+
 6.	 Blot SI, Vandewoude KH, Hoste EA, Colardyn FA (2002) Outcome and attributable mortality in critically III patients with bacteremia involving methicillin-susceptible and methicillin-resistant *Staphylococcus aureus*. Archives of Internal Medicine. 162 (19): 2229–35. doi:10.1001/archinte.162.19.2229. PMID 12390067.
-<br />
+
+
 7.	 Hiramatsu K, Hanaki H, Ino T, Yabuta K, Oguri T, Tenover FC (1997) Methicillin-resistant *Staphylococcus aureus* clinical strain with reduced vancomycin susceptibility. The Journal of Antimicrobial Chemotherapy. 40 (1): 135–6. doi:10.1093/jac/40.1.135. PMID 9249217.
-<br />
+
+
 8.	 Carter AP, Clemons WM, Brodersen DE, Morgan-Warren RJ, Wimberly BT, Ramakrishnan V (2000) Functional insights from the structure of the 30S ribosomal subunit and its interactions with antibiotics. Nature. 407 (6802): 340–8. doi:10.1038/35030019. PMID 11014183.
-<br />
+
+
 9.	 Drugbank: Trimethoprim. https://www.drugbank.ca/drugs/DB00440
-<br />
+
+
 10.	Fisher SL (2008) Glutamate racemase as a target for drug discovery. Microbial Biotechnology. 1 (5): 345–60. doi:10.1111/j.1751-7915.2008.00031.x
-<br />
+
+
 11.	Lundqvist T, Fisher SL, Kern G, Folmer RHA, Xue Y, Newton DT, et al. (2007) Exploitation of structural and regulatory diversity in glutamate racemases. Nature. 447: 817–22
-<br />
+
+
 12.	de Jonge BLM, Kutschke A, Uria-Nickelsen M, Kamp HD, Mills SD (2009) Pyrazolopyrimidinediones are selective agents for Helicobacter pylori that suppress growth through inhibition of glutamate racemase (MurI). American Society for Microbiology. 53 (8): 3331–6. doi:10.1128/AAC.00226-09.
-<br />
+
+
 13.	Breault G, Eyermann CJ, Comita-Prevoir J, Geng B, Petrichko R. (2007) Hit to lead studies: exploring 8-benzyl pteridine 6,7-diones as inhibitors of glutamate racemase (MurI) in Gram positive bacteria. 47th ICAAC Meeting, Chicago, IL, USA, Abs: F1-336.
-<br />
+
+
 14.	Geng B, Breault G, Comita-Prevoir J, Petrichko R, Eyermann JC, Doig P, Gorseth E, Noonan B (2008) Bioorg. Med. Chem. Lett., 18, 4368.
-<br />
+
+
 15.	Mochalkin I, Lightle S, Narasimhan L, Bornemeier D, Melnick M, Vanderroest S, McDowell L (2008) Structure of a small-molecule inhibitor complexed with GlmU from Haemophilus influenzae reveals an allosteric binding site. Protein Science. 17 (3): 577–82. doi: 10.1110/ps.073271408.
-<br />
+
 
