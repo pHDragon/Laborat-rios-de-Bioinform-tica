@@ -407,55 +407,63 @@ Trimethoprim é uma droga que actua como um análogo de pirimidina e que perturb
 
 ## Glutamato racemase
 <br />
-A glutamato racemase (GLUR), com id de acessão P63638, na base de dados Protein do NCBI e no UniProt (com score de anotação 2/5 no UniProt), é resultado da transcrição e tradução do gene murI, com id de acessão SA0997. A enzima está envolvida no metabolismo do glutamato, essencial para a biossíntese da parede celular em bactérias, formando D-glutamato a partir de L-glutamato, reação representada na figura 8. D-glutamato é um monómero da camada de peptidoglicano, um componente essencial na estrutura da parede celular em bactérias. A conservação do glutamato racemase e a sua essencialidade no crescimento em procariotas faz desta enzima um bom alvo para a descoberta de potenciais drogas. A estrutura tridimensional da GLUR encontra-se representada na figura 9, em que se encontram ligadas duas moléculas de D-glutamato. Por esta estrutura, é possível perceber que a enzima é um homodímero.<br />
+A glutamato racemase (GLUR), com id de acessão P63638, na base de dados Protein do NCBI e no UniProt (com score de anotação 2/5 no UniProt), é resultado da transcrição e tradução do gene murI, com id de acessão SA0997. A enzima está envolvida no metabolismo do glutamato, essencial para a biossíntese da parede celular em bactérias, formando D-glutamato a partir de L-glutamato, reação representada na figura 9. D-glutamato é um monómero da camada de peptidoglicano, um componente essencial na estrutura da parede celular em bactérias. A conservação do glutamato racemase e a sua essencialidade no crescimento em procariotas faz desta enzima um bom alvo para a descoberta de potenciais drogas. A estrutura tridimensional da GLUR encontra-se representada na figura 10, em que se encontram ligadas duas moléculas de D-glutamato. Por esta estrutura, é possível perceber que a enzima é um homodímero.
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/GLUR reaction.PNG">
 
-##### Figura 8 – Reação catalisada pela enzima glutamato racemase, EC 5.1.1.3
+##### Figura 9 – Reação catalisada pela enzima glutamato racemase, EC 5.1.1.3
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/GLUR 3D.PNG" width="400">
 
-##### Figura 9 – Imagem tridimensional da glutamato racemase, obtida do Swiss Model através do código de acessão P63638.
+##### Figura 10 – Imagem tridimensional do glutamato racemase, obtida do Swiss Model através do código de acessão P63638.
 <br />
 
 De novo, recorrendo ao biopython, importamos o ficheiro genbank da enzima glutamato racemase. Tal como atrás, é possível extrair as features e outras informações relevantes. Neste caso, verificamos que a enzima tem um comprimento de 266 aminoácidos e nas features é possível identificar os locais de ligação do substrato (glutamato) na enzima. Os valores aqui encontrados correspondem aos aminoácidos que participam na ligação do substrato à enzima, conhecimento útil no design de drogas. Todas as anotações do ficheiro do UniProt estão em anexo.
 <br />
-Procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com recurso ao LocTree3, previmos a localização sub-celular da GLUR, com o resultado representado na figura 10, sendo a enzima citoplasmática. Usámos o Phobius e Boctupus novamente para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 11 e verificam a inexistência de domínios transmembranares em ambos os casos, que corrobora o resultado obtido pelo LocTree3, de que a enzima será citoplasmática. Recorrendo ao PDB, usado atrás para a estrutura 3D da enzima, podemos avaliar a existência de α-hélices e folhas β. Na figura 12 encontra-se uma lista de ‘features’ da proteína. Na linha ‘Secstruc’ verificamos a existência de 11 hélices e 10 folhas β, corroborado, apesar de ser difícil de observar, pela estrutura tridimensional.
+Procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com recurso ao LocTree3, previmos a localização sub-celular da GLUR, com o resultado representado na figura 11, sendo a enzima citoplasmática. Usámos o Phobius e Boctupus novamente para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 12 e verificam a inexistência de domínios transmembranares em ambos os casos, que corrobora o resultado obtido pelo LocTree3, de que a enzima será citoplasmática. Recorrendo ao PDB, usado atrás para a estrutura 3D da enzima, podemos avaliar a existência de α-hélices e folhas β. Na figura 13 encontra-se uma lista de ‘features’ da proteína. Na linha ‘Secstruc’ verificamos a existência de 11 hélices e 10 folhas β, corroborado, apesar de ser difícil de observar, pela estrutura tridimensional.
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/loc_sub_celular.PNG" width="700">
 
-##### Figura 10 – Localização subcelular da GLUR prevista pelo LocTree3
+##### Figura 11 – Localização subcelular da GLUR prevista pelo LocTree3
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/Dom_TransMemb_alpha.PNG" width="650"> <img src="%23 SA0997 Glutamate racemase/Dom_TransMemb_bet.PNG" width="400">
 
-##### Figura 11 – Previsão de domínios α-hélice transmembranares da GLUR prevista pelo Phobius (A) e de domínios β-barril pelo Boctupus (B)
+##### Figura 12 – Previsão de domínios α-hélice transmembranares da GLUR prevista pelo Phobius (A) e de domínios β-barril pelo Boctupus (B)
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/GLUR SecStruct.PNG" width="800">
 
-##### Figura 12 – Lista de features da GLUR, obtida do PDB, com código de acesso 2JFQ, de uma strain de S. auresus diferente, mas a sequência é igual. As estruturas α-hélices e folhas β encontram-se representadas a vermelho e bege, respetivamente, na linha Secsstruc
+##### Figura 13 – Lista de features da GLUR, obtida do PDB, com código de acesso 2JFQ, de uma strain de S. auresus diferente, mas a sequência é igual. As estruturas α-hélices e folhas β encontram-se representadas a vermelho e bege, respetivamente, na linha Secsstruc
 <br />
 
-De seguida identificamos locais de possíveis modificações pós-tradução. Estudamos a fosforilação, nos resíduos de serina, treonina e tyrosina, na GLUR através do NetPhosBac, tal como anteriormente. Os resultados obtidos encontram-se na figura 13, em que T é a treonina, S a serina e Y a tirosina. Tendo representadas as possíveis posições de fosforilação, podemos comparar com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da enzima. Verificamos que existe fosforilação nas posições 88, 122, 168, 175, 185, 206, 207, 243 e 256. Por comparação com as features da GLUR, verificamos que a posição 185 está envolvida na ligação ao glutamato, pelo que esta modificação terá impacto no modo de ligação do substrato.
+De seguida identificamos locais de possíveis modificações pós-tradução. Estudamos a fosforilação, nos resíduos de serina, treonina e tyrosina, na GLUR através do NetPhosBac, tal como anteriormente. Os resultados obtidos encontram-se na figura 14, em que T é a treonina, S a serina e Y a tirosina. Tendo representadas as possíveis posições de fosforilação, podemos comparar com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da enzima. Verificamos que existe fosforilação nas posições 88, 122, 168, 175, 185, 206, 207, 243 e 256. Por comparação com as features da GLUR, verificamos que a posição 185 está envolvida na ligação ao glutamato, pelo que esta modificação terá impacto no modo de ligação do substrato.
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/GluRace_locais_fosf.PNG">
 
-##### Figura 13 – Posições de fosforilação na GLUR previstas pelo NetPhosBac
+##### Figura 14 – Posições de fosforilação na GLUR previstas pelo NetPhosBac
 <br />
 
 Mais uma vez foram determinados os domínios conservados, com recurso ao ScanProsite e CDD do NCBI. Em ambas as ferramentas é detetado o motivo pertencente à superfamília Asp_Glu_race (Asp/Glu/Hydantoin racemase). Pertencem a esta família racemases relacionadas evolucionariamente, que não necessitam de cofatores para a sua atividade enzimática. Verificamos que há um “match” de duas regiões pequenas, típicas nesta superfamília.
+<br />
+Para a filogenia, foi realizado mais uma vez um BLAST para identificar organismos com homologia na sequência da enzima. Os organismos escolhidos para fazer alinhamentos múltiplos e construir a árvore filogenética são todos bactérias e as respetivas enzimas têm todas a mesma função (glutamato racemase) e tamanhos aproximados. Estes resultados demonstrativos de homologia entre diferentes espécies ajudam a comprovar os resultados de motivos conservados obtidos com o CDD. A árvore filogenética encontra-se na figura 15. Verifica-se a …
+<br />
+#######################ACABAR PARAGRAFO########################
+<br />
+<br />
+################FALTA IMAGEM##############################
+##### Figura 14
 <br />
 Embora a glutamato racemase em S. aureus não esteja ainda descrita com alvo de drogas terapêuticas conhecidas, já foram identificados em diferentes espécies de bactérias vários tipos de inibidores desta enzima, incluindo “mechanism and substrate-based inhibitors”, inibidores alostéricos, e “large molecule inhibitors”[10]. Um exemplo de inibidores alostéricos que foram identificados são as pirazolopirimidinedionas, que mostraram inibir a glutamato racemase em Helicobacter pylori[11]. Estes inibidores exibem uma inibição reversível, e a ligação da enzima ao substrato é necessária para que haja inibição, pois o local de ligação do inibidor só fica acessível após a ligação do substrato ao centro ativo devido à deslocação da hélice C-terminal. Embora a actividade destes inibidores tenha sido testada para várias espécies, incluindo S. aureus, estes mostraram possuir elevada afinidade apenas para a glutamato racemase de H. pylori[12].
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/Pirazolopirimidinediona.jpg">
 
-##### Figura 14 – Pirazolopirimidinediona
+##### Figura 16 - Pirazolopirimidinediona.
 
 <br />
 Outro grupo de inibidores de glutamato racemase são as 8-benzil pteridine-6,7-dionas, com atividade inibitória em bactérias Gram-positivas[13]. Estes inibidores têm origem noutro grupo de inibidores, as 9-benzil purinas, que não demonstraram ter atividade contra a glutamato racemase de S. aureus, emboram demonstrassem inibir a de espécies próximas como Enterococcus faecalis e Enterococcus faecium[14]. No entanto, as 8-benzil pteridine-6,7-dionas já demonstraram ter um espectro de acção mais alargado, que inclui S. aureus.
@@ -463,7 +471,7 @@ Outro grupo de inibidores de glutamato racemase são as 8-benzil pteridine-6,7-d
 
 <img src="%23 SA0997 Glutamate racemase/Benzil purina e 8-benzil pteridinediona.jpg">
 
-##### Figura 15 -Benzil purina e 8-benzil pteridinediona.
+##### Figura 17 -Benzil purina e 8-benzil pteridinediona.
 <br />
 <br />
 A elevada conservação e essencialidade da glutamato racemase, em conjunto com os vários inibidores já identificados, prova que esta enzima é um bom potencial alvo terapêutico, embora se tenha de ter em consideração as pequenas diferenças estruturais e bioquímicas da enzima entre diferentes espécies para o desenvolvimento de novas drogas em S. aureus.
@@ -472,48 +480,55 @@ A elevada conservação e essencialidade da glutamato racemase, em conjunto com 
 
 ## N-acetilglucosamina-1-fosfato uridiltransferase
 <br />
-N-acetilglucosamina-1-fosfato uridiltransferase (GLMU), com id de acessão Q7A7B4, na base de dados Protein do NCBI e no UniProt (com score de anotação 5/5 no UniProt), é resultado da transcrição e tradução do gene glmU, com id de acessão SA_RS02635 , em Nucleotide. Esta enzima é essencial no metabolismo de aminoaçúcares e pode ser também um alvo terapêutico atrativo. GlmU catalisa a formação de uridine-diphospho-N-acetylglucosamine (UDP-GlcNAc), um precursor importante na biossíntese de peptidoglicano e lipopolissacarídeos tanto em bactérias gram-negativas, como gram-positivas. GLMU tem um papel bifuncional a possuir dois centros ativos funcionalmente autónomos: o centro acetiltransferase e o centro uridiltransferase que residem em dois domínios proteicos distintos. A reação de acetiltransferase ocorre no domínio C-terminal (acetiltransferase) e a reação uridiltransferase ocorre no domínio N-terminal (uridiltransferase), figura 16. Para a estrutura tridimensional da GLMU não foi encontrado nenhum modelo. Por isso, realizamos ‘sequence search’ no PDB e escolhemos a sequência mais similar. Optámos pela enzima com id 4AAW (E-value=2.052E-121; Identities=49%; Positives=67%), do organismo S. pneumoniae, com exatamente a mesma função que a GLMU. Esta enzima está representada na figura 17, em que é evidente a presença de um homotrímero. Na parte superior da figura, N-terminal, encontram-se os locais ativos da reação de uridiltransferase; na parte inferior, C-terminal, encontram-se os locais ativos da atividade acetiltransferase.
+N-acetilglucosamina-1-fosfato uridiltransferase (GLMU), com id de acessão Q7A7B4, na base de dados Protein do NCBI e no UniProt (com score de anotação 5/5 no UniProt), é resultado da transcrição e tradução do gene glmU, com id de acessão SA0457, em Nucleotide. Esta enzima é essencial no metabolismo de aminoaçúcares e pode ser também um alvo terapêutico atrativo. GlmU catalisa a formação de uridine-diphospho-N-acetylglucosamine (UDP-GlcNAc), um precursor importante na biossíntese de peptidoglicano e lipopolissacarídeos tanto em bactérias gram-negativas, como gram-positivas. GLMU tem um papel bifuncional a possuir dois centros ativos funcionalmente autónomos: o centro acetiltransferase e o centro uridiltransferase que residem em dois domínios proteicos distintos. A reação de acetiltransferase ocorre no domínio C-terminal (acetiltransferase) e a reação uridiltransferase ocorre no domínio N-terminal (uridiltransferase), figura 18. Para a estrutura tridimensional da GLMU não foi encontrado nenhum modelo. Por isso, realizamos ‘sequence search’ no PDB e escolhemos a sequência mais similar. Optámos pela enzima com id 4AAW (E-value=2.052E-121; Identities=49%; Positives=67%), do organismo S. pneumoniae, com exatamente a mesma função que a GLMU. Esta enzima está representada na figura 19, em que é evidente a presença de um homotrímero. Na parte superior da figura, N-terminal, encontram-se os locais ativos da reação de uridiltransferase; na parte inferior, C-terminal, encontram-se os locais ativos da atividade acetiltransferase.
 <br />
 <br />
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU reaction.PNG">
 
-##### Figura 16 – Reação catalisada pela enzima GLMU, EC 5.1.1.3
+##### Figura 18 – Reação catalisada pela enzima GLMU, EC 5.1.1.3
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU 3D.PNG" width="400">
 
-##### Figura 17 – Imagem tridimensional da GLMU, obtida do PDB através do código de acessão 4AAW.
+##### Figura 19 – Imagem tridimensional da GLMU, obtida do PDB através do código de acessão 4AAW.
 <br />
 
 Novamente com o biopython, importamos o ficheiro genbank da enzima glutamato racemase. Extraímos as features e outras informações relevantes. Todas as anotações do ficheiro do UniProt estão em anexo. Verificámos que a enzima tem um comprimento de 450 aminoácidos e nas features é possível identificar os locais de ligação dos substratos (UDP-GlcNAc, acetil-coA, Mg2+) aos locais da enzima. Estes valores correspondem aos aminoácidos que participam na ligação dos substratos à enzima, útil para o design de drogas.
 <br />
-Novamente procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com o LocTree3, previmos a localização sub-celular da GLMU. O resultado obtido encontra-se na figura 18, sendo a enzima citoplasmática, resultado também confirmado pelas anotações da página UniProt desta enzima. Tal como atrás, usámos o Phobius e Boctupus para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 19 e verificam que não existem domínios transmembranares em ambos os casos, que confirma o resultado obtido no LocTree3. Recorrendo ao PDB, podemos avaliar a existência de α-hélices e folhas β, recorrendo à enzima usada atrás para avaliar a estrutura 3D. Na figura 20 encontra-se uma lista de ‘features’ desta enzima. Na linha ‘Secstruc’ verificamos a existência de 15 hélices α e cerca de 41 folhas β. 
+Novamente procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com o LocTree3, previmos a localização sub-celular da GLMU. O resultado obtido encontra-se na figura 20, sendo a enzima citoplasmática, resultado também confirmado pelas anotações da página UniProt desta enzima. Tal como atrás, usámos o Phobius e Boctupus para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 21 e verificam que não existem domínios transmembranares em ambos os casos, que confirma o resultado obtido no LocTree3. Recorrendo ao PDB, podemos avaliar a existência de α-hélices e folhas β, recorrendo à enzima usada atrás para avaliar a estrutura 3D. Na figura 22 encontra-se uma lista de ‘features’ desta enzima. Na linha ‘Secstruc’ verificamos a existência de 15 hélices α e cerca de 41 folhas β. 
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/loc_celular.PNG" width="700">
 
-##### Figura 18 – Localização subcelular da GLMU prevista pelo LocTree3
+##### Figura 20 – Localização subcelular da GLMU prevista pelo LocTree3
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Dom_TransMemb_alpha.PNG" width="650"> <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Dom_TransMemb_bet.PNG" width="400">
 
-##### Figura 19 – Previsão de domínios α-hélice transmembranares da GLMU prevista pelo Phobius (A) e de domínios β-barril pelo Boctupus (B)
+##### Figura 21 – Previsão de domínios α-hélice transmembranares da GLMU prevista pelo Phobius (A) e de domínios β-barril pelo Boctupus (B)
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU SecStruct.PNG" width="800">
 
-##### Figura 20 – Lista de features da GLMU, obtida do PDB, com código de acesso 4AAW, de S. pneumonieae. As estruturas α-hélices e folhas β encontram-se representadas a vermelho e bege, respetivamente, na linha Secsstruc
+##### Figura 22 – Lista de features da GLMU, obtida do PDB, com código de acesso 4AAW, de S. pneumonieae. As estruturas α-hélices e folhas β encontram-se representadas a vermelho e bege, respetivamente, na linha Secsstruc
 <br />
 
-Com recurso ao NetPhosBac estudámos os locais de fosforilação nos resíduos de serina, treonina e tirosina, na GLMU. Os resultados obtidos encontram-se na figura 21, em que T é a treonina, S a serina e Y a tirosina. Comparámos as possíveis posições de fosforilação, com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da GLMU. Verificámos que poderá existir fosforilação nas posições 18, 96, 146, 169, 284, 312, 318, 364, 400 e 434. Por comparação com as features da GLMU, verificamos nenhuma destas posições corresponde a locais de ligação a substrato ou cofatores, pelo que as fosforilações não terão impacto na interação entre enzima e substrato.
+Com recurso ao NetPhosBac estudámos os locais de fosforilação nos resíduos de serina, treonina e tirosina, na GLMU. Os resultados obtidos encontram-se na figura 23, em que T é a treonina, S a serina e Y a tirosina. Comparámos as possíveis posições de fosforilação, com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da GLMU. Verificámos que poderá existir fosforilação nas posições 18, 96, 146, 169, 284, 312, 318, 364, 400 e 434. Por comparação com as features da GLMU, verificamos nenhuma destas posições corresponde a locais de ligação a substrato ou cofatores, pelo que as fosforilações não terão impacto na interação entre enzima e substrato.
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU_locais_fosf.PNG">
 
-##### Figura 21 – Posições de fosforilação na GLMU previstas pelo NetPhosBac
+##### Figura 23 – Posições de fosforilação na GLMU previstas pelo NetPhosBac
 <br />
 
 Utilizámos o ScanProsite e CDD do NCBI, para determinar os motivos conservados na GLMU. No caso do ScanProsite, foram detetadas duas regiões conservadas, ‘LuxR-type’ HTH e ‘Hexapeptide-repeat containing-transferases’. No primeiro caso foi identificado um domínio de ligação ao DNA. No entanto, tendo em conta as funções já descritas desta enzima e o nível de confiança obtido, este motivo não estará associado à enzima. A segunda região conservada está associada à atividade de transferase. Tendo em conta a descrição atrás da atividade de acetiltransferase da GLMU, este motivo estará associado a essa atividade, visto a sua posição ser também no C-terminal. No CDD foi encontrada uma superfamília GlmU. Verificámos que há uma homologia forte com as enzimas pertencentes a esta família, todas elas com as mesmas atividades.
+<br />
+A GLMU foi ainda analizada por BLAST, de modo a encontrar organismos que partilham homologia. Foram escolhidos 10 organismos, todos eles bactérias. Com a sequência das enzimas dos organismos foram realizados alinhamento múltiplo e foi contruída a árvore filogenética, representada na figura 24. As enzimas dos 10 organismos apresentaram todos sequências e funções semelhantes à GLMU de S. aureus, resultados que reforçam as funções associadas à enzima. Da árvore verificamos ainda que há um relacionamento forte entre S. aureus e Bacillus subtilis, também uma bactéria gram-positiva, e ainda com as enzimas de Clostridioides difficile e Streptococcus pneumoniae, também gram-positivas. Com este conhecimento, será provável que uma droga desenvolvida para um destes organismos seja ativa contra a enzima de S. aureus, devido à elevada homologia, pelo que estudos nestes organismos poderão ser interessantes.
+<br />
+
+<img src="%23'SA0457'%2C UDP-N-acetylglucosamine/DHFR_tree.PNG">
+
+##### Figura 24 – Árvore filogenética para enzimas homólogas com a GLMU, obtida do alinhamento múltiplo de organismos selecionados com BLAST
 <br />
 Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em Haemophilus influenzae, que ocupa um centro alostérico adjacente ao local de ligação do substrato GlcNAc-1-P, previnindo, deste modo, a ocorrência de rearranjos estruturais necessários para que haja a reação catalisada pela enzima[15]. Não se verificou, no entanto, atividade contra a GlmU de bactérias Gram-positivas, incluindo a de S. aureus. A GlmU destes organismos contém uma substituição num resíduo no centro alostérico relativamente à GlmU de Haemophilus influenzae, o que impede a interação entre o inibidor e a enzima. Contudo, estes resultados sugerem que o centro alostérico pode ser utilizado para criar compostos com uma melhor afinidade para ortólogos de GlmU, abrindo assim as portas para o desenvolvimento de uma nova classe de drogas em S. aureus tendo esta enzima com alvo terapêutico.
 
@@ -521,7 +536,7 @@ Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Molécula inibidora da GlmU.jpg">
 
-##### Figura 22 - Molécula inibidora da GlmU.
+##### Figura 25 - Molécula inibidora da GlmU.
 
 <br />
 #################### (FILOGENIA)#################################
