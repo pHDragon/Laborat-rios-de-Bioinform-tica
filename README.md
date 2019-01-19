@@ -456,7 +456,7 @@ Para a filogenia, foi realizado mais uma vez um BLAST para identificar organismo
 <br />
 <br />
 ################FALTA IMAGEM##############################
-##### Figura 14
+##### Figura 15
 <br />
 Embora a glutamato racemase em S. aureus não esteja ainda descrita com alvo de drogas terapêuticas conhecidas, já foram identificados em diferentes espécies de bactérias vários tipos de inibidores desta enzima, incluindo “mechanism and substrate-based inhibitors”, inibidores alostéricos, e “large molecule inhibitors”[10]. Um exemplo de inibidores alostéricos que foram identificados são as pirazolopirimidinedionas, que mostraram inibir a glutamato racemase em Helicobacter pylori[11]. Estes inibidores exibem uma inibição reversível, e a ligação da enzima ao substrato é necessária para que haja inibição, pois o local de ligação do inibidor só fica acessível após a ligação do substrato ao centro ativo devido à deslocação da hélice C-terminal. Embora a actividade destes inibidores tenha sido testada para várias espécies, incluindo S. aureus, estes mostraram possuir elevada afinidade apenas para a glutamato racemase de H. pylori[12].
 <br />
@@ -526,7 +526,7 @@ Utilizámos o ScanProsite e CDD do NCBI, para determinar os motivos conservados 
 A GLMU foi ainda analizada por BLAST, de modo a encontrar organismos que partilham homologia. Foram escolhidos 10 organismos, todos eles bactérias. Com a sequência das enzimas dos organismos foram realizados alinhamento múltiplo e foi contruída a árvore filogenética, representada na figura 24. As enzimas dos 10 organismos apresentaram todos sequências e funções semelhantes à GLMU de S. aureus, resultados que reforçam as funções associadas à enzima. Da árvore verificamos ainda que há um relacionamento forte entre S. aureus e Bacillus subtilis, também uma bactéria gram-positiva, e ainda com as enzimas de Clostridioides difficile e Streptococcus pneumoniae, também gram-positivas. Com este conhecimento, será provável que uma droga desenvolvida para um destes organismos seja ativa contra a enzima de S. aureus, devido à elevada homologia, pelo que estudos nestes organismos poderão ser interessantes.
 <br />
 
-<img src="%23'SA0457'%2C UDP-N-acetylglucosamine/DHFR_tree.PNG">
+<img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU_tree.PNG">
 
 ##### Figura 24 – Árvore filogenética para enzimas homólogas com a GLMU, obtida do alinhamento múltiplo de organismos selecionados com BLAST
 <br />
