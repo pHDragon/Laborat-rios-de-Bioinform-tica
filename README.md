@@ -569,7 +569,6 @@ Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em
 ##### Figura 25 - Estrutura molecular da molécula inibidora da GlmU
 
 <br />
-#################################(REGULAÇÃO)#################################
 
 # Referências
 
