@@ -592,8 +592,8 @@ Outra das verificações que se obteve foi o facto que os genes essenciais obtid
 <br />
 
 O constante estudo do *S. aureus* é fundamental devido à sua capacidade de desenvolver resistências muito rapidamente, tornando-se um risco para a saúde pública. Como foi demonstrado, esta espécie bacteriana desenvolveu várias resistências, nomeadamente a penicilina, meticilina e antibióticos glicopeptídicos, ao longo do tempo. Assim, é necessária a procura de novos alvos terapêuticos e desenvolvimento de novas drogas. Este estudo pode passar por metodologias seguidas neste trabalho. O desenvolvimento de fármacos passará por identificar alvos enzimáticos, de modo a que os efeitos secundários em humanos sejam o mínimo possível. Este alvos têm que ser muito bem caracterizados e estudados para o desenvolvimento de fármacos direcionados. Para a caracterização é importante o conhecimento dos substratos e de como se dá a reação, da estrutura e organização da enzima, desde detalhes estruturais do local ativo, á localização da enzima que pode afetar o tipo de medicamento a desenvolver. Para além da caracterização, também é importante a comparação com a enzima de outros organismos homólogos, de modo a confirmar os dados obtidos e possivelmente basear-se na existência de drogas para estas, de modo a desenvolver fármacos para a espécie de interesse.
-
 <br />
+
 Um outro estudo interessante não realizado neste trabalho seria focado na regulação dos genes que codificam as enzimas estudadas. O estudo da regulação permite a identificação de novas possibilidades para o desenvolvimento de fármacos. Poder-se-iam desenvolver fármacos direcionados, por exemplo direcionados a fatores de transcrição, que afetariam a expressão de genes. Também se poderia focar no estudo de mais proteínas/genes não homólogos, porque em teoria, todos eles apresentam um possível potencial terapêutico.
 
 <br />
