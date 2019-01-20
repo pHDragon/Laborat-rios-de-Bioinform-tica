@@ -17,7 +17,7 @@
 
 ## Introdução
 
-*Staphylococcus aureus* é uma bactéria gram-positiva, com forma arredondada, pertencente ao filo Firmicutes e é um membro frequente da microbiota do corpo humano. Normalmente é um organismo comensal, podendo ser um agente patogénico, envolvido em diversas doenças, como infeções da pele, pneumonia, meningite, osteomielite, sépsia, endocardite, entre outros. As estirpes patogénicas promovem infeções através da produção de fatores de virulência. O aparecimento de estirpes de *S. aureus* resistentes a antibióticos é um problema a nível mundial.
+*Staphylococcus aureus* é uma bactéria Gram-positiva, com forma arredondada, pertencente ao filo Firmicutes e é um membro frequente da microbiota do corpo humano. Normalmente é um organismo comensal, podendo ser um agente patogénico, envolvido em diversas doenças, como infeções da pele, pneumonia, meningite, osteomielite, sépsia, endocardite, entre outros. As estirpes patogénicas promovem infeções através da produção de fatores de virulência. O aparecimento de estirpes de *S. aureus* resistentes a antibióticos é um problema a nível mundial.
 
 
 O tratamento preferencial para infeções de *S. aureus* é a penicilina, que inibe a síntese das ligações cruzadas entre os aminoácidos do peptidoglicano. No entanto, em muitos países a resistência a penicilina é extremamente comum. A alternativa é frequentemente um antibiótico de β-lactama resistente a penicilase. Os antibióticos β-lactâmicos resistentes, ainda são utilizados como primeira linha de tratamento. A meticilina foi o primeiro antibiótico a ser usado, sendo introduzido em 1959, mas apenas dois anos depois, o primeiro caso de *S. aureus* resistente à meticilina (MRSA).
@@ -367,7 +367,7 @@ Dihidrofolato redutase (DHFR), com id de acessão P99079 na base de dados Protei
 
 <br />
 
-Com recurso a biopython, importamos o ficheiro genbank da enzima dihidrofolato redutase. Ainda com o biopython, é possível extrair informações deste ficheiro, nomeadamente das features, que contém informações relevantes sobre regiões da proteína. Neste caso, verificamos que a enzima tem um comprimento de 159 aminoácidos e nas features é possível identificar os locais de ligação dos substratos (NADPH e dihidrofolato) na enzima. Os valores apresentados correspondem aos aminoácidos que participam na ligação dos substratos à enzima. O conhecimento dos locais de ligação e do modo como se ligam os substratos é sempre útil no design de drogas, por permitir encontrar substâncias que apresentem padrões de ligação semelhantes, sendo ainda possível os locais da enzima que servirão como potencias alvos, por serem importantes na ligação ao substrato. Todas as anotações do ficheiro do UniProt estão em anexo.
+Com recurso a biopython, importámos o ficheiro genbank da enzima dihidrofolato redutase. Ainda com o biopython, é possível extrair informações deste ficheiro, nomeadamente das features, que contém informações relevantes sobre regiões da proteína. Neste caso, verificámos que a enzima tem um comprimento de 159 aminoácidos e nas features é possível identificar os locais de ligação dos substratos (NADPH e dihidrofolato) na enzima. Os valores apresentados correspondem aos aminoácidos que participam na ligação dos substratos à enzima. O conhecimento dos locais de ligação e do modo como se ligam os substratos é sempre útil no design de drogas, por permitir encontrar substâncias que apresentem padrões de ligação semelhantes, sendo ainda possível os locais da enzima que servirão como potencias alvos, por serem importantes na ligação ao substrato. Todas as anotações do ficheiro do UniProt estão em anexo.
 <br />
 De seguida procedemos ao estudo da localização, organização estrutural e modificações pós-tradução desta enzima. Com recurso ao LocTree3, previmos a localização sub-celular da DHFR. O resultado encontra-se na figura 3. A enzima será citoplasmática e tendo em conta a função que desempenha, a localização faz algum sentido. Usámos o Phobius e Boctupus para encontrar regiões α-hélice e β-barril transmembranares, respetivamente. Os resultados encontram-se na figura 4 e verificam a inexistência de domínios transmembranares em ambos os casos, que corrobora o resultado obtido pelo LocTree3, de que a enzima será citoplasmática. Recorrendo ao PDB, usado atrás para a estrutura 3D da enzima, podemos avaliar a existência de α-hélices e folhas β. Na figura 5 encontra-se uma lista de ‘features’ da proteína. Na linha ‘Secstruc’ verificamos a existência de 4 hélices e 10 folhas β, corroborado, também, pela observação da estrutura tridimensional.
 <br />
@@ -387,7 +387,7 @@ De seguida procedemos ao estudo da localização, organização estrutural e mod
 ##### Figura 5 – Lista de features da DHFR, obtida do PDB, com código de acesso 6E4E. As estruturas α-hélices e folhas β encontram-se representadas a vermelho e bege, respetivamente, na linha Secsstruc
 <br />
 
-Procedemos à identificação de possíveis modificações pós-tradução, que alteram as características da proteína, alteram polaridade e tamanho dos aminoácidos, afetando a ligação da proteína ao substrato, a localização subcelular pode ser determinada por estas modificações. Estudamos a fosforilação, nos resíduos de serina, treonina e tyrosina, na DHFR através do NetPhosBac. Os resultados obtidos encontram-se na figura 6, em que T é a treonina, S a serina e Y a tirosina. Tendo representadas as possíveis posições de fosforilação, podemos comparar com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da enzima. Verificamos que existe fosforilação nas posições 36, 40, 79, 136 e 137. Por comparação com as features, verificamos que as fosforilações não afetarão os locais de ligação de substrato, pelo que estas modificações não terão impacto no modo de ligação dos substratos. 
+Procedemos à identificação de possíveis modificações pós-tradução, que alteram as características da proteína, alteram polaridade e tamanho dos aminoácidos, afetando a ligação da proteína ao substrato, a localização subcelular pode ser determinada por estas modificações. Estudamos a fosforilação, nos resíduos de serina, treonina e tyrosina, na DHFR através do NetPhosBac. Os resultados obtidos encontram-se na figura 6, em que T é a treonina, S a serina e Y a tirosina. Tendo representadas as possíveis posições de fosforilação, podemos comparar com as posições de ligação aos substratos, obtidos em biopython, pela lista de features da enzima. Verificamos que existe fosforilação nas posições 36, 40, 79, 136 e 137. Por comparação com as features, verificámos que as fosforilações não afetarão os locais de ligação de substrato, pelo que estas modificações não terão impacto no modo de ligação dos substratos. 
 <br />
 
 <img src="%23SA1259  Dihydrofolate reductase/DHFR_locais_fosf.png">
@@ -398,7 +398,7 @@ Procedemos à identificação de possíveis modificações pós-tradução, que 
 Os domínios conservados na sequência também foram determinados, com recurso ao ScanProsite e CDD do NCBI. Os motivos geralmente estão relacionados com determinadas funções biológicas. Assim, a determinação de motivos conservados será útil no design de fármacos, por se ter o conhecimento, por exemplo de locais de ligação de metais, substratos ou outras funções associadas aos motivos. Em ambas as ferramentas é detetado o motivo pertencente à superfamília DHFR (dihidrofolato redutase), característico deste tipo de enzimas. Verificamos que há um “match”, significativo, com quase toda a totalidade da enzima. No caso do CDD ainda é possível verificar as posições de interação dos dois substratos com aminoácidos individuais, que correspondem às mesmas posições presentes nas features obtidas com biopython. Estes locais são potenciais alvos de drogas contra a DHFR.
 
 
-Foi realizado um BLAST tendo como query a sequência proteica da DHFR e foram escolhidos 10 organismos, que apresentavam homologia com esta enzima. Com as sequências da DHFR dos 10 organismos e de *S. aureus* realizámos um alinhamento múltiplo, do qual foi depois contruída uma árvore filogenética. A árvore encontra-se na figura 7 e verifica-se um elevado grau de relacionamento entre a DHFR de *S. aureus* com as de Glycine max e Arabidopsis taliana, duas espécies vegetais. Apesar destas duas proteínas terem tamanhos muito superiores à de *S. aureus*, 530 e 408 aminoácidos, respetivamente, demonstram uma zona homologa à DHFR, com uma função associada igual. Relativamente às restantes enzimas bacterianas, todas elas têm um tamanho semelhante à DHFR de *S. aureus*, tendo a mesma função. Estes resultados corroboram os obtidos pelo CDD. A construção de árvores filogenéticas também será útil no estudo de potenciais agentes terapêuticos. Será provável que uma droga que atue numa dada enzima, também seja ativa contra enzimas homólogas de outro organismo. Neste caso, não faz sentido o estudo de drogas para as duas espécies de plantas, devido à maior complexidade do organismo e diferenças significativas relativamente à bactéria. Assim sendo, o descobrimento de drogas como sendo ativas em Escherichia coli, Bacillus subtilis, entre outros será útil, pois estes agentes terapêuticos poderão ser ativos contra a DHFR de *S. aureus*.
+Foi realizado um BLAST tendo como query a sequência proteica da DHFR e foram escolhidos 10 organismos, que apresentavam homologia com esta enzima. Com as sequências da DHFR dos 10 organismos e de *S. aureus* realizámos um alinhamento múltiplo, do qual foi depois contruída uma árvore filogenética. A árvore encontra-se na figura 7 e verifica-se um elevado grau de relacionamento entre a DHFR de *S. aureus* com as de Glycine max e Arabidopsis taliana, duas espécies vegetais. Apesar destas duas proteínas terem tamanhos muito superiores à de *S. aureus*, 530 e 408 aminoácidos, respetivamente, demonstram uma zona homóloga à DHFR, com uma função associada igual. Relativamente às restantes enzimas bacterianas, todas elas têm um tamanho semelhante à DHFR de *S. aureus*, tendo a mesma função. Estes resultados corroboram os obtidos pelo CDD. A construção de árvores filogenéticas também será útil no estudo de potenciais agentes terapêuticos. Será provável que uma droga que atue numa dada enzima, também seja ativa contra enzimas homólogas de outro organismo. Neste caso, não faz sentido o estudo de drogas para as duas espécies de plantas, devido à maior complexidade do organismo e diferenças significativas relativamente à bactéria. Assim sendo, o descobrimento de drogas como sendo ativas em Escherichia coli, Bacillus subtilis, entre outros será útil, pois estes agentes terapêuticos poderão ser ativos contra a DHFR de *S. aureus*.
 	
 <br />
 
@@ -408,13 +408,13 @@ Foi realizado um BLAST tendo como query a sequência proteica da DHFR e foram es
 <br />
 
 
-Trimethoprim é uma droga que actua como um análogo de pirimidina e que perturba a síntese de folato, essencial para a via de síntese de timidina. A inibição da DHPR faz com que o organismo não sintetise os nucleótidos necessários para a replicação de DNA, actuando como uma bactericida. Trimethoprim liga-se à proteína e inibe a redução de ácido dihidrofólico (DHF) para ácido tetrahidrofólico (THF). Sendo que THF é um precursor essencial na via de síntese de timidina, há deste modo uma inibição da síntese de DNA. Adicionalmente, Trimethoprim apresenta uma muito maior afinidade para a DHPR da bactéria do que para a humana, o que faz desta proteína um bom alvo terapêutico. Trimethoprim actua melhor em conjunto com Sulfamethoxazole, uma droga que inibe outra enzima envolvida na mesma via, a dihidropteroato sintetase. Esta combinação das duas drogas funciona melhor do que o Trimethoprim por si só, pois reduz o desenvolvimento de resistência por parte de *S. aureus* a estas drogas[9].
+Trimetoprim (representado na figura 8) é uma droga que actua como um análogo de pirimidina e que perturba a síntese de folato, essencial para a via de síntese de timidina. A inibição da DHPR faz com que o organismo não sintetise os nucleótidos necessários para a replicação de DNA, actuando como uma bactericida. Trimetoprim liga-se à proteína e inibe a redução de ácido dihidrofólico (DHF) para ácido tetrahidrofólico (THF). Sendo que THF é um precursor essencial na via de síntese de timidina, há deste modo uma inibição da síntese de DNA. Adicionalmente, Trimethoprim apresenta uma muito maior afinidade para a DHPR da bactéria do que para a humana, o que faz desta proteína um bom alvo terapêutico. Trimethoprim actua melhor em conjunto com Sulfamethoxazole, uma droga que inibe outra enzima envolvida na mesma via, a dihidropteroato sintetase. Esta combinação das duas drogas funciona melhor do que o Trimetoprim por si só, pois reduz o desenvolvimento de resistência por parte de *S. aureus* a estas drogas[9].
 
 <br />
 
 <img src="%23SA1259  Dihydrofolate reductase/Trimethoprim.jpg">
 
-##### Figura 8 – Trimethoprim
+##### Figura 8 – Estrutura molecular de Trimetoprim
 <br />
 
 <br />
@@ -474,23 +474,23 @@ Para a filogenia, foi realizado mais uma vez um BLAST para identificar organismo
 ##### Figura 15 - Árvore filogenética para enzimas homólogas com a GLUR, obtida do alinhamento múltiplo de organismos selecionados com BLAST
 <br />
 
-Embora a glutamato racemase em *S. aureus* não esteja ainda descrita com alvo de drogas terapêuticas conhecidas, já foram identificados em diferentes espécies de bactérias vários tipos de inibidores desta enzima, incluindo “mechanism and substrate-based inhibitors”, inibidores alostéricos, e “large molecule inhibitors”[10]. Um exemplo de inibidores alostéricos que foram identificados são as pirazolopirimidinedionas, que mostraram inibir a glutamato racemase em Helicobacter pylori[11]. Estes inibidores exibem uma inibição reversível, e a ligação da enzima ao substrato é necessária para que haja inibição, pois o local de ligação do inibidor só fica acessível após a ligação do substrato ao centro ativo devido à deslocação da hélice C-terminal. Embora a actividade destes inibidores tenha sido testada para várias espécies, incluindo *S. aureus*, estes mostraram possuir elevada afinidade apenas para a glutamato racemase de H. pylori[12].
+Embora a glutamato racemase em *S. aureus* não esteja ainda descrita com alvo de drogas terapêuticas conhecidas, já foram identificados em diferentes espécies de bactérias vários tipos de inibidores desta enzima, incluindo “mechanism and substrate-based inhibitors”, inibidores alostéricos, e “large molecule inhibitors”[10]. Um exemplo de inibidores alostéricos que foram identificados são as pirazolopirimidinedionas (figura 16), que mostraram inibir a glutamato racemase em *Helicobacter pylori*[11]. Estes inibidores exibem uma inibição reversível, e a ligação da enzima ao substrato é necessária para que haja inibição, pois o local de ligação do inibidor só fica acessível após a ligação do substrato ao centro ativo devido à deslocação da hélice C-terminal. Embora a actividade destes inibidores tenha sido testada para várias espécies, incluindo *S. aureus*, estes mostraram possuir elevada afinidade apenas para a glutamato racemase de *H. pylori*[12].
 
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/Pirazolopirimidinediona.jpg">
 
-##### Figura 16 - Pirazolopirimidinediona.
+##### Figura 16 - Estrutura molecular de Pirazolopirimidinediona
 
 <br />
 
-Outro grupo de inibidores de glutamato racemase são as 8-benzil pteridine-6,7-dionas, com atividade inibitória em bactérias Gram-positivas[13]. Estes inibidores têm origem noutro grupo de inibidores, as 9-benzil purinas, que não demonstraram ter atividade contra a glutamato racemase de *S. aureus*, emboram demonstrassem inibir a de espécies próximas como Enterococcus faecalis e Enterococcus faecium[14]. No entanto, as 8-benzil pteridine-6,7-dionas já demonstraram ter um espectro de acção mais alargado, que inclui *S. aureus*.
+Outro grupo de inibidores de glutamato racemase são as 8-benzil pteridine-6,7-dionas, com atividade inibitória em bactérias Gram-positivas[13]. Estes inibidores têm origem noutro grupo de inibidores, as 9-benzil purinas (figura 17), que não demonstraram ter atividade contra a glutamato racemase de *S. aureus*, emboram demonstrassem inibir a de espécies próximas como Enterococcus faecalis e Enterococcus faecium[14]. No entanto, as 8-benzil pteridine-6,7-dionas já demonstraram ter um espectro de acção mais alargado, que inclui *S. aureus*.
 
 <br />
 
 <img src="%23 SA0997 Glutamate racemase/Benzil purina e 8-benzil pteridinediona.jpg">
 
-##### Figura 17 -Benzil purina e 8-benzil pteridinediona.
+##### Figura 17 - Estrutura molecular de Benzil purina e de 8-benzil pteridinediona
 <br />
 
 
@@ -512,7 +512,7 @@ N-acetilglucosamina-1-fosfato uridiltransferase (GLMU), com id de acessão Q7A7B
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/GLMU 3D.PNG" width="400">
 
-##### Figura 19 – Imagem tridimensional da GLMU, obtida do PDB através do código de acessão 4AAW.
+##### Figura 19 – Imagem tridimensional da GLMU, obtida do PDB através do código de acessão 4AAW
 <br />
 
 Novamente com o biopython, importamos o ficheiro genbank da enzima glutamato racemase. Extraímos as features e outras informações relevantes. Todas as anotações do ficheiro do UniProt estão em anexo. Verificámos que a enzima tem um comprimento de 450 aminoácidos e nas features é possível identificar os locais de ligação dos substratos (UDP-GlcNAc, acetil-coA, Mg2+) aos locais da enzima. Estes valores correspondem aos aminoácidos que participam na ligação dos substratos à enzima, útil para o design de drogas.
@@ -557,13 +557,13 @@ A GLMU foi ainda analizada por BLAST, de modo a encontrar organismos que partilh
 
 
 
-Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em Haemophilus influenzae, que ocupa um centro alostérico adjacente ao local de ligação do substrato GlcNAc-1-P, previnindo, deste modo, a ocorrência de rearranjos estruturais necessários para que haja a reação catalisada pela enzima[15]. Não se verificou, no entanto, atividade contra a GlmU de bactérias Gram-positivas, incluindo a de *S. aureus*. A GlmU destes organismos contém uma substituição num resíduo no centro alostérico relativamente à GlmU de Haemophilus influenzae, o que impede a interação entre o inibidor e a enzima. Contudo, estes resultados sugerem que o centro alostérico pode ser utilizado para criar compostos com uma melhor afinidade para ortólogos de GlmU, abrindo assim as portas para o desenvolvimento de uma nova classe de drogas em *S. aureus* tendo esta enzima com alvo terapêutico.
+Foi identificada uma molécula sintética de pequeno tamanho que inibe a GlmU em *Haemophilus influenzae* (figura 25), que ocupa um centro alostérico adjacente ao local de ligação do substrato GlcNAc-1-P, previnindo, deste modo, a ocorrência de rearranjos estruturais necessários para que haja a reação catalisada pela enzima[15]. Não se verificou, no entanto, atividade contra a GlmU de bactérias Gram-positivas, incluindo a de *S. aureus*. A GlmU destes organismos contém uma substituição num resíduo no centro alostérico relativamente à GlmU de *H. influenzae*, o que impede a interação entre o inibidor e a enzima. Contudo, estes resultados sugerem que o centro alostérico pode ser utilizado para criar compostos com uma melhor afinidade para ortólogos de GlmU, abrindo assim as portas para o desenvolvimento de uma nova classe de drogas em *S. aureus* tendo esta enzima com alvo terapêutico.
 
 <br />
 
 <img src="%23'SA0457'%2C UDP-N-acetylglucosamine/Molécula inibidora da GlmU.jpg">
 
-##### Figura 25 - Molécula inibidora da GlmU.
+##### Figura 25 - Estrutura molecular da molécula inibidora da GlmU
 
 <br />
 #################################(REGULAÇÃO)#################################
